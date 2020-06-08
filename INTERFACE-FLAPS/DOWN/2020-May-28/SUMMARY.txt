@@ -1,0 +1,19 @@
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 566, ifAdminStatus up(1), ifOperStatus down(2), ifName ae2
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 596, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/0.30
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 597, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/0.40
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 592, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/0.32767
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 598, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/7.30
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 599, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/7.40
+
+May 28 10:44:14  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 593, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/7.32767
+
+May 28 10:45:44  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 549, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/3/0
+
+May 28 10:45:44  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 556, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/3/7
+

@@ -1,0 +1,2 @@
+Authentication failure: 3BBIRP_USFLNA01 172.26.244.23 
+Timeout to device: 3BBIRVX_CODCOR01 172.26.243.230
