@@ -1,0 +1,41 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE-BRRJMA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : puacc03.rjo
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : TO-3BBARCE_BRRJMA01-4/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : TO-3BBARCE_BRRJMA02-4/12
+
+ Interface ge-2/2/6 : 
+ Admin status ('ge-2/2/6',) : up
+ Oper status ('ge-2/2/6',) : up
+ Description ('ge-2/2/6',) : ##3BBARRR_BRRJAM01.ge-0/0/10##
+
+ Interface ge-2/3/6 : 
+ Admin status ('ge-2/3/6',) : up
+ Oper status ('ge-2/3/6',) : up
+ Description ('ge-2/3/6',) : ##3BBARRR_BRRJAM01.ge-0/0/11##
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : ##3BBARRR_BRRJAM01.ae1##
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

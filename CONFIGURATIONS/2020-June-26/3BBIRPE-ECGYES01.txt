@@ -1,0 +1,597 @@
+
+set version 18.2R2.6
+set groups re0 system host-name 3BBIRPE_ECGYES01-re0
+set groups re0 system tacplus-server 10.190.0.96 source-address 172.26.243.22
+set groups re0 system accounting destination tacplus server 10.190.0.96 source-address 172.26.243.22
+set groups re0 system ntp source-address 172.26.243.22
+set groups re0 interfaces fxp0 unit 0 description "Management Interface"
+set groups re0 interfaces fxp0 unit 0 family inet address 172.26.243.22/27 master-only
+set groups re0 interfaces fxp0 unit 0 family inet address 172.26.243.19/27
+set groups re0 snmp trap-options source-address 172.26.243.22
+set groups re1 system host-name 3BBIRPE_ECGYES01-re1
+set groups re1 system tacplus-server 10.190.0.96 source-address 172.26.243.22
+set groups re1 system accounting destination tacplus server 10.190.0.96 source-address 172.26.243.22
+set groups re1 system ntp source-address 172.26.243.22
+set groups re1 interfaces fxp0 unit 0 description "Management Interface"
+set groups re1 interfaces fxp0 unit 0 family inet address 172.26.243.22/27 master-only
+set groups re1 interfaces fxp0 unit 0 family inet address 172.26.243.21/27
+set groups re1 snmp trap-options source-address 172.26.243.22
+set groups ntp_key system ntp authentication-key 1 type md5
+set groups ntp_key system ntp authentication-key 1 value /* SECRET-DATA */
+set groups interface-values interfaces <*> hold-time up 10000
+set groups interface-values interfaces <*> hold-time down 60
+set groups maximum-MTU interfaces <*> mtu 9192
+set groups maximum-MTU interfaces <*> unit <*> family inet mtu 9170
+set groups maximum-MTU interfaces <*> unit <*> family iso mtu 9167
+set groups maximum-MTU interfaces <*> unit <*> family mpls mtu 9150
+set groups internal-bgp-key protocols bgp group <*> authentication-key /* SECRET-DATA */
+set groups isis-values protocols isis interface <*> lsp-interval 10
+set groups isis-values protocols isis interface <*> point-to-point
+set groups isis-values protocols isis interface <*> link-protection
+set groups isis-values protocols isis interface <*> level <*> hello-interval 3
+set groups isis-values protocols isis interface <*> level <*> hold-time 9
+set groups isis-values-CE protocols isis reference-bandwidth 1g
+set groups isis-values-CE protocols isis level 1 disable
+set groups isis-values-CE protocols isis level 2 wide-metrics-only
+set groups isis-values-CE protocols isis level 2 prefix-export-limit 2000
+set groups isis-values-CE protocols isis interface <*> lsp-interval 10
+set groups isis-values-CE protocols isis interface <*> point-to-point
+set groups isis-values-CE protocols isis interface <*> link-protection
+set groups isis-values-CE protocols isis interface <*> level <*> hello-interval 3
+set groups isis-values-CE protocols isis interface <*> level <*> hold-time 9
+set apply-groups re0
+set apply-groups re1
+set system commit synchronize
+set system login class read-only-local permissions view
+set system login class read-only-local permissions view-configuration
+set system login class solo-lectura permissions network
+set system login class solo-lectura permissions view
+set system login class solo-lectura permissions view-configuration
+set system login class solo-lectura allow-commands "exit|(ping .*)|(traceroute .*)|(show .*)"
+set system login user RO uid 2903
+set system login user RO class solo-lectura
+set system login user SU uid 2904
+set system login user SU class super-user
+set system login user r3m0t3.93 uid 2003
+set system login user r3m0t3.93 class super-user
+set system login user r3m0t3.93 authentication encrypted-password /* SECRET-DATA */
+set system login user INOC uid 2002
+set system login user INOC class super-user
+set system root-authentication encrypted-password /* SECRET-DATA */
+set system time-zone America/Guayaquil
+set system authentication-order tacplus
+set system authentication-order password
+set system name-server 10.190.0.65
+set system tacplus-server 10.190.0.96 port 49
+set system tacplus-server 10.190.0.96 timeout 3
+set system tacplus-server 10.190.0.96 single-connection
+set system accounting events interactive-commands
+set system accounting destination tacplus server 10.190.0.96
+set system services ftp
+set system services ssh root-login deny
+set system services ssh protocol-version v2
+set system services ssh max-sessions-per-connection 32
+set system services ssh connection-limit 15
+set system services ssh rate-limit 10
+set system services telnet
+set system services netconf ssh
+set system syslog user * any emergency
+set system syslog host 172.26.244.13 any emergency
+set system syslog host 172.26.244.13 authorization any
+set system syslog host 172.26.244.13 daemon info
+set system syslog host 172.26.244.13 kernel notice
+set system syslog host 172.26.244.13 interactive-commands error
+set system syslog host 172.26.244.13 facility-override local7
+set system syslog host 10.190.0.74 any emergency
+set system syslog host 10.190.0.74 daemon info
+set system syslog host 10.190.0.74 kernel critical
+set system syslog host 10.190.0.74 match "(.*rpd.*)|(.*bfdd.*)|(.*mib2d.*)"
+set system syslog host 10.190.0.74 facility-override local7
+set system syslog host 10.190.0.67 any warning
+set system syslog host 10.190.0.67 authorization info
+set system syslog host 10.190.0.67 match "(UI_COMMIT_COMPLETED)|(RPD_BGP_NEIGHBOR_STATE_CHANGED)|(SNMP_TRAP_LINK_DOWN)|(RPD_LDP_NBRDOWN)|(RPD_ISIS_NBRDOWN)|(RPD_LDP_NBRDOWN)|(RPD_OSPF_NBRDOWN)"
+set system syslog host 10.190.0.67 structured-data
+set system syslog host 172.26.244.25 any warning
+set system syslog host 172.26.244.25 authorization info
+set system syslog host 172.26.244.25 match "(UI_COMMIT_COMPLETED)|(RPD_BGP_NEIGHBOR_STATE_CHANGED)|(SNMP_TRAP_LINK_DOWN)|(RPD_LDP_NBRDOWN)|(RPD_ISIS_NBRDOWN)|(RPD_LDP_NBRDOWN)|(RPD_OSPF_NBRDOWN)"
+set system syslog host 172.26.244.25 port 6000
+set system syslog host 172.26.244.25 structured-data
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file messages kernel notice
+set system syslog file interactive-commands interactive-commands notice
+set system syslog file default-log-messages any info
+set system syslog file default-log-messages match "(requested 'commit' operation)|(requested 'commit synchronize' operation)|(copying configuration to juniper.save)|(commit complete)|ifAdminStatus|(FRU power)|(FRU removal)|(FRU insertion)|(link UP)|transitioned|Transferred|transfer-file|(license add)|(license delete)|(package -X update)|(package -X delete)|(FRU Online)|(FRU Offline)|(plugged in)|(unplugged)|CFMD_CCM_DEFECT| LFMD_3AH | RPD_MPLS_PATH_BFD|(Master Unchanged, Members Changed)|(Master Changed, Members Changed)|(Master Detected, Members Changed)|(vc add)|(vc delete)|(Master detected)|(Master changed)|(Backup detected)|(Backup changed)|(interface vcp-)"
+set system syslog file default-log-messages structured-data
+set system syslog file test any emergency
+set system syslog file test daemon info
+set system syslog file test kernel critical
+set system syslog file test match "(.*rpd.*)|(.*bfdd.*)|(.*mib2d.*)"
+set system license keys key "JUNOS822485705 aeaqib qcsd7q werrgu 2tmmzx he2dsm bqgaww w5dwkf wqyd2o ivbsar cfebbu 6tcpjv besqih fb5p4n thi6sw 4fm4k4 ww5gmj xhkoj5 ow36ds rb5c5t fgtw6h s4nra2 lzi4zm 7ul7ae 5hw"
+set system ntp server 10.190.0.65 version 4
+set system ntp server 10.190.0.65 prefer
+set chassis redundancy routing-engine 0 master
+set chassis redundancy routing-engine 1 backup
+set chassis redundancy failover on-loss-of-keepalives
+set chassis redundancy failover on-disk-failure
+set chassis redundancy graceful-switchover
+set chassis aggregated-devices ethernet device-count 16
+set chassis network-services enhanced-ip
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 target address 172.26.240.2
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 target address 172.26.240.8
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 thresholds successive-loss 3
+deactivate services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 target address 172.26.240.10
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 target address 172.26.240.12
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 target address 172.26.240.14
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 target address 172.26.240.16
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 target address 172.26.240.20
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 target address 172.26.240.22
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 target address 172.26.240.24
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 target address 172.26.240.26
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 target address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 source-address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01 thresholds successive-loss 3
+deactivate services rpm probe healthbot test PE_TO-3BBIRPE_USTXST01
+set interfaces xe-2/0/0 description TO-2BBALS_ECGYES01-Te3/2
+set interfaces ge-2/2/0 apply-groups interface-values
+set interfaces ge-2/2/0 apply-groups maximum-MTU
+set interfaces ge-2/2/0 description TO-3BBARCE-ECGYES01-GE-1/12
+set interfaces ge-2/2/0 unit 0 family inet address 10.10.14.40/31
+set interfaces ge-2/2/0 unit 0 family iso
+set interfaces ge-2/2/0 unit 0 family mpls
+set interfaces ge-2/2/1 apply-groups interface-values
+set interfaces ge-2/2/1 apply-groups maximum-MTU
+set interfaces ge-2/2/1 description TO-3BBIRPE-ECGYES02-GE-1/12
+set interfaces ge-2/2/1 unit 0 family inet address 10.10.14.42/31
+set interfaces ge-2/2/1 unit 0 family iso
+set interfaces ge-2/2/1 unit 0 family mpls
+set interfaces ge-2/2/2 disable
+set interfaces ge-2/2/3 flexible-vlan-tagging
+set interfaces af0 apply-groups interface-values
+set interfaces af0 apply-groups maximum-MTU
+set interfaces af0 description "PE-P interconnection"
+set interfaces af0 unit 0 apply-groups interface-values
+set interfaces af0 unit 0 apply-groups maximum-MTU
+set interfaces af0 unit 0 description "PE-P Fabric Interface"
+set interfaces af0 unit 0 family inet address 10.10.10.17/31
+set interfaces af0 unit 0 family iso
+set interfaces af0 unit 0 family mpls
+set interfaces lo0 unit 0 family inet filter input PROTECT_RE
+set interfaces lo0 unit 0 family inet address 172.26.240.18/32 primary
+set interfaces lo0 unit 0 family inet address 172.26.240.18/32 preferred
+set interfaces lo0 unit 0 family iso address 47.0001.0593.4609.2018.00
+set snmp name 3BBIRPE_ECGYES01
+set snmp location "Quito Ecuador"
+set snmp contact AMX
+set snmp filter-interfaces all-internal-interfaces
+set snmp community UltraP3rC0mm authorization read-only
+set snmp community UltraP3rC0mm clients 172.26.244.11/32
+set snmp community UltraP3rC0mm clients 172.26.244.12/32
+set snmp community UltraP3rC0mm clients 172.26.244.13/32
+set snmp community UltraP3rC0mm clients 10.190.0.102/32
+set snmp community UltraP3rC0mm clients 0.0.0.0/0 restrict
+set snmp trap-group space targets 172.26.244.13
+set forwarding-options hash-key family inet layer-3
+set forwarding-options hash-key family inet layer-4
+set forwarding-options hash-key family mpls label-1
+set forwarding-options hash-key family mpls label-2
+set forwarding-options hash-key family mpls payload ip
+set routing-options nonstop-routing
+set routing-options static route 0.0.0.0/0 next-hop 172.26.243.1
+set routing-options static route 0.0.0.0/0 retain
+set routing-options static route 0.0.0.0/0 no-readvertise
+set routing-options static route 10.190.0.0/26 next-hop 172.26.243.1
+set routing-options static route 10.190.0.0/26 no-readvertise
+set routing-options static route 10.190.0.64/26 next-hop 172.26.243.1
+set routing-options static route 10.190.0.64/26 no-readvertise
+set routing-options router-id 172.26.240.18
+set routing-options autonomous-system 46090
+set routing-options forwarding-table export pplb
+set protocols mpls icmp-tunneling
+set protocols mpls no-decrement-ttl
+set protocols mpls interface af0.0
+set protocols mpls interface lo0.0
+set protocols mpls interface ge-2/2/0.0
+set protocols mpls interface ge-2/2/1.0
+set protocols bgp apply-groups internal-bgp-key
+set protocols bgp precision-timers
+set protocols bgp path-selection external-router-id
+set protocols bgp traceoptions file BGP.log
+set protocols bgp traceoptions file size 10m
+set protocols bgp traceoptions file files 10
+set protocols bgp traceoptions flag state
+set protocols bgp traceoptions flag open
+set protocols bgp log-updown
+set protocols bgp drop-path-attributes 128
+set protocols bgp bgp-error-tolerance
+set protocols bgp group MP-IBGP type internal
+set protocols bgp group MP-IBGP local-address 172.26.240.18
+set protocols bgp group MP-IBGP advertise-external
+set protocols bgp group MP-IBGP mtu-discovery
+set protocols bgp group MP-IBGP family inet unicast
+set protocols bgp group MP-IBGP family inet-vpn unicast add-path receive
+set protocols bgp group MP-IBGP family inet-vpn unicast add-path send path-count 4
+set protocols bgp group MP-IBGP family l2vpn signaling
+set protocols bgp group MP-IBGP family evpn signaling
+set protocols bgp group MP-IBGP family inet-mvpn signaling
+set protocols bgp group MP-IBGP export IBGP-EXPORT-NHS
+set protocols bgp group MP-IBGP multipath multiple-as
+set protocols bgp group MP-IBGP bfd-liveness-detection minimum-interval 1000
+set protocols bgp group MP-IBGP bfd-liveness-detection multiplier 3
+set protocols bgp group MP-IBGP bfd-liveness-detection session-mode automatic
+set protocols bgp group MP-IBGP neighbor 172.26.240.252 description "RR Argentina"
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.252
+set protocols bgp group MP-IBGP neighbor 172.26.240.253 description "RR Brazil"
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.253
+set protocols bgp group MP-IBGP neighbor 172.26.240.251 description "RR Chile"
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.251
+set protocols bgp group MP-IBGP neighbor 172.26.240.250 description 3BBIRRR_PELIPO01
+set protocols bgp group MP-IBGP neighbor 172.26.240.254 description 3BBIRRR_CODCOR01
+set protocols bgp group MP-IBGP neighbor 172.26.240.255 description 3BBIRRR_USTXST01
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.255
+set protocols isis reference-bandwidth 100g
+set protocols isis lsp-lifetime 65535
+set protocols isis spf-options delay 100
+set protocols isis overload timeout 600
+set protocols isis level 2 wide-metrics-only
+set protocols isis level 2 prefix-export-limit 2000
+set protocols isis level 1 disable
+set protocols isis interface ge-2/2/0.0 apply-groups isis-values-CE
+set protocols isis interface ge-2/2/0.0 family inet bfd-liveness-detection minimum-interval 100
+set protocols isis interface ge-2/2/0.0 family inet bfd-liveness-detection multiplier 3
+set protocols isis interface ge-2/2/0.0 level 1 disable
+set protocols isis interface ge-2/2/0.0 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ge-2/2/0.0 level 2 hello-authentication-type md5
+set protocols isis interface ge-2/2/1.0 apply-groups isis-values
+set protocols isis interface ge-2/2/1.0 apply-groups isis-values-CE
+set protocols isis interface ge-2/2/1.0 family inet bfd-liveness-detection minimum-interval 100
+set protocols isis interface ge-2/2/1.0 family inet bfd-liveness-detection multiplier 3
+set protocols isis interface ge-2/2/1.0 level 1 disable
+set protocols isis interface ge-2/2/1.0 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ge-2/2/1.0 level 2 hello-authentication-type md5
+set protocols isis interface ae1.0 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ae1.0 level 2 hello-authentication-type md5
+set protocols isis interface af0.0 apply-groups isis-values
+set protocols isis interface af0.0 ldp-synchronization
+set protocols isis interface af0.0 level 2 authentication-key /* SECRET-DATA */
+set protocols isis interface af0.0 level 2 authentication-type md5
+set protocols isis interface lo0.0 passive
+set protocols ldp traceoptions file LDP.log
+set protocols ldp traceoptions file size 5m
+set protocols ldp traceoptions file files 10
+set protocols ldp traceoptions flag state
+set protocols ldp traceoptions flag error detail
+set protocols ldp track-igp-metric
+set protocols ldp import PE-Loopback-subnet
+set protocols ldp deaggregate
+set protocols ldp interface ge-2/2/0.0
+set protocols ldp interface ge-2/2/1.0
+set protocols ldp interface af0.0
+set protocols ldp interface lo0.0
+set protocols ldp p2mp
+set policy-options prefix-list REMOTE_ACCESS 10.190.0.0/25
+set policy-options prefix-list REMOTE_ACCESS 172.26.240.0/24
+set policy-options prefix-list REMOTE_ACCESS 172.26.243.0/24
+set policy-options prefix-list REMOTE_ACCESS 172.26.244.0/24
+set policy-options prefix-list REMOTE_ACCESS 172.26.245.0/24
+set policy-options prefix-list BGP_ADDRESSES apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list SNMP_ADDRESSES 10.190.0.102/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.11/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.12/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.13/32
+set policy-options prefix-list DOMAIN_ADDRESSES 10.190.0.65/32
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.240.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.243.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.244.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list TACACS_ADDRESSES 10.190.0.96/32
+set policy-options prefix-list FTP_ADDRESSES 10.190.0.5/32
+set policy-options prefix-list FTP_ADDRESSES 10.190.0.95/32
+set policy-options prefix-list NTP_ADDRESSES 10.190.0.65/32
+set policy-options prefix-list NTP_ADDRESSES 172.26.240.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.243.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.244.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list OSPF_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list INFRA-IPV4 10.10.0.0/16
+set policy-options prefix-list LOOPBACKS 172.26.240.0/24
+set policy-options prefix-list ICMP_ACCESS 10.10.12.0/24
+set policy-options prefix-list ICMP_ACCESS 10.10.14.0/24
+set policy-options prefix-list ICMP_ACCESS 10.190.0.0/25
+set policy-options prefix-list ICMP_ACCESS 172.26.240.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.243.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.244.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.245.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.255.0/24
+set policy-options policy-statement EXPORT-CONNECTED term 1 from protocol direct
+set policy-options policy-statement EXPORT-CONNECTED term 1 then accept
+set policy-options policy-statement IBGP-EXPORT-NHS then next-hop self
+set policy-options policy-statement PE-Loopback-subnet term ALLOW-LOOPBACK from route-filter 0.0.0.0/0 prefix-length-range /32-/32
+set policy-options policy-statement PE-Loopback-subnet term ALLOW-LOOPBACK then accept
+set policy-options policy-statement PE-Loopback-subnet term DENY then reject
+set policy-options policy-statement pplb term 10 then load-balance per-packet
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af41
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af42
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af43
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Voz loss-priority low code-points ef
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Voz loss-priority low code-points cs5
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points cs2
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af21
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af22
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af23
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points cs3
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af31
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af32
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af33
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points cs1
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af11
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af12
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af13
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class BE loss-priority high code-points be
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Video loss-priority low code-points 100
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Voz loss-priority low code-points 101
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class NC loss-priority low code-points 110
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class NC loss-priority low code-points 111
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Datos loss-priority medium-low code-points 011
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Datos loss-priority low code-points 010
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class BE loss-priority high code-points 000
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Scavenger loss-priority high code-points 001
+set class-of-service code-point-aliases exp af11 001
+set class-of-service code-point-aliases exp af12 001
+set class-of-service code-point-aliases exp ef 101
+set class-of-service code-point-aliases exp ef1 101
+set class-of-service code-point-aliases exp af13 001
+set class-of-service code-point-aliases exp af21 010
+set class-of-service code-point-aliases exp af22 010
+set class-of-service code-point-aliases exp af23 010
+set class-of-service code-point-aliases exp af31 011
+set class-of-service code-point-aliases exp af32 011
+set class-of-service code-point-aliases exp af33 011
+set class-of-service code-point-aliases exp af41 100
+set class-of-service code-point-aliases exp af42 100
+set class-of-service code-point-aliases exp af43 100
+set class-of-service code-point-aliases exp be 000
+set class-of-service code-point-aliases exp cs1 001
+set class-of-service code-point-aliases exp cs2 010
+set class-of-service code-point-aliases exp cs3 011
+set class-of-service code-point-aliases exp cs4 100
+set class-of-service code-point-aliases exp cs5 101
+set class-of-service code-point-aliases exp cs6 110
+set class-of-service code-point-aliases exp cs7 111
+set class-of-service host-outbound-traffic forwarding-class NC
+set class-of-service host-outbound-traffic dscp-code-point 111000
+set class-of-service drop-profiles DO-NOT-DROP fill-level 100 drop-probability 0
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 50 drop-probability 50
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 80 drop-probability 90
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 90 drop-probability 95
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 95 drop-probability 100
+set class-of-service drop-profiles MEDIUM-DROP fill-level 75 drop-probability 10
+set class-of-service drop-profiles MEDIUM-DROP fill-level 90 drop-probability 40
+set class-of-service drop-profiles MEDIUM-DROP fill-level 95 drop-probability 60
+set class-of-service drop-profiles BUFFERED-DROP fill-level 90 drop-probability 95
+set class-of-service drop-profiles BUFFERED-DROP fill-level 95 drop-probability 99
+set class-of-service drop-profiles BUFFERED-DROP fill-level 99 drop-probability 100
+set class-of-service forwarding-classes queue 0 BE
+set class-of-service forwarding-classes queue 1 Voz
+set class-of-service forwarding-classes queue 2 Video
+set class-of-service forwarding-classes queue 3 NC
+set class-of-service forwarding-classes queue 4 Datos
+set class-of-service forwarding-classes queue 5 Business
+set class-of-service forwarding-classes queue 6 Scavenger
+set class-of-service interfaces xe-2/0/0 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces xe-2/0/0 unit 0 classifiers dscp MATCH-DSCP
+set class-of-service interfaces xe-2/0/0 unit 0 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces xe-2/0/0 unit 0 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces xe-2/0/0 unit 0 rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces ge-2/2/0 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ge-2/2/0 unit 0 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ge-2/2/0 unit 0 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ge-2/2/0 unit 0 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ge-2/2/0 unit 0 rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces ge-2/2/1 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ge-2/2/1 unit 0 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ge-2/2/1 unit 0 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ge-2/2/1 unit 0 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ge-2/2/1 unit 0 rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces ge-2/2/2 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ge-2/2/2 unit 1601 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ge-2/2/2 unit 1601 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ge-2/2/2 unit 1601 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ge-2/2/2 unit 1601 rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces af* scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces af* unit * classifiers dscp MATCH-DSCP
+set class-of-service interfaces af* unit * classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces af* unit * rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces af* unit * rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Datos loss-priority high code-point 011
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Datos loss-priority low code-point 010
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Video loss-priority high code-point 100
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Video loss-priority low code-point 100
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Voz loss-priority high code-point 101
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Voz loss-priority low code-point 101
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class NC loss-priority low code-point 111
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class NC loss-priority high code-point 110
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class BE loss-priority high code-point 000
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class BE loss-priority low code-point 000
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Scavenger loss-priority high code-point 001
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Scavenger loss-priority low code-point 001
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Video loss-priority low code-point 100
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Voz loss-priority low code-point 101
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class NC loss-priority low code-point 111
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Datos loss-priority medium-low code-point 011
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Datos loss-priority low code-point 010
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class BE loss-priority high code-point 000
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Scavenger loss-priority high code-point 001
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class BE scheduler BE
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Scavenger scheduler Scavenger
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Datos scheduler Datos
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Video scheduler Video
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Voz scheduler Voz
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class NC scheduler NC
+set class-of-service schedulers Voz shaping-rate percent 30
+set class-of-service schedulers Voz buffer-size temporal 15k
+set class-of-service schedulers Voz priority strict-high
+set class-of-service schedulers Video transmit-rate percent 20
+set class-of-service schedulers Video buffer-size percent 20
+set class-of-service schedulers Video priority high
+set class-of-service schedulers Video drop-profile-map loss-priority any protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers Datos transmit-rate percent 20
+set class-of-service schedulers Datos buffer-size percent 20
+set class-of-service schedulers Datos priority medium-high
+set class-of-service schedulers Datos drop-profile-map loss-priority any protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers NC transmit-rate percent 5
+set class-of-service schedulers NC buffer-size percent 5
+set class-of-service schedulers NC priority high
+set class-of-service schedulers BE transmit-rate percent 5
+set class-of-service schedulers BE buffer-size percent 5
+set class-of-service schedulers BE priority low
+set class-of-service schedulers BE drop-profile-map loss-priority any protocol any drop-profile BUFFERED-DROP
+set class-of-service schedulers Business transmit-rate percent 5
+set class-of-service schedulers Business buffer-size percent 5
+set class-of-service schedulers Business priority low
+set class-of-service schedulers Business drop-profile-map loss-priority low protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers Business drop-profile-map loss-priority high protocol any drop-profile AGGRESSIVE-DROP
+set class-of-service schedulers Scavenger transmit-rate remainder
+set class-of-service schedulers Scavenger buffer-size remainder
+set class-of-service schedulers Scavenger priority low
+set class-of-service schedulers Scavenger drop-profile-map loss-priority any protocol any drop-profile AGGRESSIVE-DROP
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG from first-fragment
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG then count FIRST-FRAG-COUNTER
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG then discard
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG from is-fragment
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG then count NEXT-FRAG-COUNTER
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG then discard
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED from source-prefix-list ICMP_ACCESS
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED from protocol icmp
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED then accept
+set firewall family inet filter PROTECT_RE term ICMP from protocol icmp
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type echo-request
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type echo-reply
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type unreachable
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type time-exceeded
+set firewall family inet filter PROTECT_RE term ICMP then policer SMALL_BW_POLICER
+set firewall family inet filter PROTECT_RE term ICMP then accept
+set firewall family inet filter PROTECT_RE term TRACEROUTE from protocol udp
+set firewall family inet filter PROTECT_RE term TRACEROUTE from destination-port 33408-33535
+set firewall family inet filter PROTECT_RE term TRACEROUTE then policer SMALL_BW_POLICER
+set firewall family inet filter PROTECT_RE term TRACEROUTE then accept
+set firewall family inet filter PROTECT_RE term TCP-CONNECTION from protocol tcp
+set firewall family inet filter PROTECT_RE term TCP-CONNECTION from tcp-flags "(syn & !ack) | fin | rst"
+set firewall family inet filter PROTECT_RE term TCP-CONNECTION then policer TCP-POLICER
+set firewall family inet filter PROTECT_RE term TCP-CONNECTION then accept
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED from protocol tcp
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED from tcp-established
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED then accept
+set firewall family inet filter PROTECT_RE term NETCONF from source-prefix-list REMOTE_ACCESS
+set firewall family inet filter PROTECT_RE term NETCONF from protocol tcp
+set firewall family inet filter PROTECT_RE term NETCONF from destination-port 20830
+set firewall family inet filter PROTECT_RE term NETCONF then accept
+set firewall family inet filter PROTECT_RE term SSH from source-prefix-list REMOTE_ACCESS
+set firewall family inet filter PROTECT_RE term SSH from protocol tcp
+set firewall family inet filter PROTECT_RE term SSH from destination-port ssh
+set firewall family inet filter PROTECT_RE term SSH then accept
+set firewall family inet filter PROTECT_RE term BGP_IN from source-prefix-list BGP_ADDRESSES
+set firewall family inet filter PROTECT_RE term BGP_IN from protocol tcp
+set firewall family inet filter PROTECT_RE term BGP_IN from destination-port bgp
+set firewall family inet filter PROTECT_RE term BGP_IN then accept
+set firewall family inet filter PROTECT_RE term LDP_IN from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term LDP_IN from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term LDP_IN from protocol tcp
+set firewall family inet filter PROTECT_RE term LDP_IN from protocol udp
+set firewall family inet filter PROTECT_RE term LDP_IN from port ldp
+set firewall family inet filter PROTECT_RE term LDP_IN then accept
+set firewall family inet filter PROTECT_RE term RSVP from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term RSVP from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term RSVP from protocol rsvp
+set firewall family inet filter PROTECT_RE term RSVP then accept
+set firewall family inet filter PROTECT_RE term OSPF from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term OSPF from protocol ospf
+set firewall family inet filter PROTECT_RE term OSPF then accept
+set firewall family inet filter PROTECT_RE term BFD_IN from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term BFD_IN from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term BFD_IN from protocol udp
+set firewall family inet filter PROTECT_RE term BFD_IN then accept
+set firewall family inet filter PROTECT_RE term SNMP from source-prefix-list SNMP_ADDRESSES
+set firewall family inet filter PROTECT_RE term SNMP from protocol udp
+set firewall family inet filter PROTECT_RE term SNMP from destination-port snmp
+set firewall family inet filter PROTECT_RE term SNMP then accept
+set firewall family inet filter PROTECT_RE term NTP from source-prefix-list NTP_ADDRESSES
+set firewall family inet filter PROTECT_RE term NTP from protocol udp
+set firewall family inet filter PROTECT_RE term NTP from port ntp
+set firewall family inet filter PROTECT_RE term NTP then accept
+set firewall family inet filter PROTECT_RE term DOMAIN from source-prefix-list DOMAIN_ADDRESSES
+set firewall family inet filter PROTECT_RE term DOMAIN from protocol udp
+set firewall family inet filter PROTECT_RE term DOMAIN from port domain
+set firewall family inet filter PROTECT_RE term DOMAIN then accept
+set firewall family inet filter PROTECT_RE term TACACS from source-prefix-list TACACS_ADDRESSES
+set firewall family inet filter PROTECT_RE term TACACS from protocol tcp
+set firewall family inet filter PROTECT_RE term TACACS from port tacacs
+set firewall family inet filter PROTECT_RE term TACACS then accept
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from protocol udp
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from port 8503
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING then accept
+set firewall family inet filter PROTECT_RE term OTHER then count DROP
+set firewall family inet filter PROTECT_RE term OTHER then log
+set firewall family inet filter PROTECT_RE term OTHER then discard
+set firewall policer SMALL_BW_POLICER if-exceeding bandwidth-limit 1m
+set firewall policer SMALL_BW_POLICER if-exceeding burst-size-limit 15k
+set firewall policer SMALL_BW_POLICER then discard
+set firewall policer TCP-POLICER if-exceeding bandwidth-limit 500k
+set firewall policer TCP-POLICER if-exceeding burst-size-limit 15k
+set firewall policer TCP-POLICER then discard
+
+{master}

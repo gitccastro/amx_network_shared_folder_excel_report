@@ -1,0 +1,7 @@
+
+Jun 12 19:32:10  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_UP: ifIndex 567, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+Jun 12 19:39:11  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+Jun 12 19:39:13  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_UP: ifIndex 567, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+Jun 12 19:46:23  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_UP: ifIndex 567, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+{master}

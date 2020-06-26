@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_USFLNA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : 2.32 dBm
+ Output power level for interface ('xe-0/0/0',) : -2.37 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : 2.36 dBm
+ Output power level for interface ('xe-0/0/1',) : -1.63 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -3.33 dBm
+ Output power level for interface ('xe-0/0/2',) : -2.87 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -2.89 dBm
+ Output power level for interface ('xe-0/0/3',) : -2.55 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : - Inf dBm
+ Output power level for interface ('xe-0/0/4',) : -3.03 dBm
+**************************************************************************************************

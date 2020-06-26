@@ -1,0 +1,5 @@
+
+Jun 23 21:38:50  3BBIRP_DOSD3M01-re1 mib2d[6340]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+Jun 23 22:35:03  3BBIRP_DOSD3M01-re1 mib2d[6340]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+{master}

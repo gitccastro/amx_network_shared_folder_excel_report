@@ -1,0 +1,4 @@
+
+Jun 17 01:04:32  3BBIRPE_PELIPO01-re0 mib2d[6666]: SNMP_TRAP_LINK_UP: ifIndex 542, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/3
+
+{master}

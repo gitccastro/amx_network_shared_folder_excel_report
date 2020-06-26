@@ -1,0 +1,19 @@
+
+Jun 24 00:35:44  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_DOWN: ifIndex 566, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/0/0.0
+
+Jun 24 00:37:08  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_DOWN: ifIndex 566, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/0/0.0
+
+Jun 24 18:48:17  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+Jun 24 18:49:36  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+Jun 24 18:50:14  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+Jun 24 18:53:01  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+Jun 24 19:04:56  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 1, ifAdminStatus up(1), ifOperStatus down(2), ifName fxp0
+
+Jun 24 12:06:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 542, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/3
+
+Jun 24 12:30:06  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 542, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/3
+

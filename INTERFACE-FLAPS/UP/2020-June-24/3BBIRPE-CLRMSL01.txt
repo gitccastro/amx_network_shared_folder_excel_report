@@ -1,0 +1,5 @@
+
+Jun 24 00:35:44  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_UP: ifIndex 566, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.0
+Jun 24 00:37:09  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_UP: ifIndex 566, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.0
+
+{master}

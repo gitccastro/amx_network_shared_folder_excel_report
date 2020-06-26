@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_DOSD3M01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -5.99 dBm
+ Output power level for interface ('xe-0/0/0',) : -3.47 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : - Inf dBm
+ Output power level for interface ('xe-0/0/1',) : -2.40 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : - Inf dBm
+ Output power level for interface ('xe-0/0/2',) : -1.76 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : - Inf dBm
+ Output power level for interface ('xe-0/0/3',) : -2.12 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : - Inf dBm
+ Output power level for interface ('xe-0/0/4',) : -2.56 dBm
+**************************************************************************************************
