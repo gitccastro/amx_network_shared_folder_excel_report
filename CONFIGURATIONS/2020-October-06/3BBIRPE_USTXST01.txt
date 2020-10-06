@@ -1,0 +1,1207 @@
+
+set version 18.2R2.6
+set groups re0 system host-name 3BBIRPE_USTXST01-re0
+set groups re0 system tacplus-server 10.190.0.96 source-address 172.26.244.51
+set groups re0 system accounting destination tacplus server 10.190.0.96 source-address 172.26.244.51
+set groups re0 system ntp source-address 172.26.244.51
+set groups re0 interfaces fxp0 unit 0 family inet address 172.26.244.51/27
+set groups re0 interfaces fxp0 unit 0 family inet address 172.26.244.54/27 master-only
+set groups re0 snmp trap-options source-address 172.26.244.51
+set groups re1 system host-name 3BBIRPE_USTXST01-re1
+set groups re1 system tacplus-server 10.190.0.96 source-address 172.26.244.53
+set groups re1 system accounting destination tacplus server 10.190.0.96 source-address 172.26.244.53
+set groups re1 system ntp source-address 172.26.244.53
+set groups re1 interfaces fxp0 unit 0 family inet address 172.26.244.53/27
+set groups re1 interfaces fxp0 unit 0 family inet address 172.26.244.54/27 master-only
+set groups re1 snmp trap-options source-address 172.26.244.53
+set groups ISIS-VALUES protocols isis level 1 disable
+set groups ISIS-VALUES protocols isis level 2 wide-metrics-only
+set groups ISIS-VALUES protocols isis level 2 prefix-export-limit 15000
+set groups ISIS-VALUES protocols isis interface <ae*> ldp-synchronization
+set groups ISIS-VALUES protocols isis interface <ae*> lsp-interval 1000
+set groups ISIS-VALUES protocols isis interface <ae*> point-to-point
+set groups ntp_key system ntp authentication-key 1 type md5
+set groups ntp_key system ntp authentication-key 1 value /* SECRET-DATA */
+set groups interface-values interfaces <*> hold-time up 10000
+set groups interface-values interfaces <*> hold-time down 60
+set groups maximum-MTU interfaces <*> mtu 9192
+set groups maximum-MTU interfaces <*> unit <*> family inet mtu 9170
+set groups maximum-MTU interfaces <*> unit <*> family iso mtu 9167
+set groups maximum-MTU interfaces <*> unit <*> family mpls mtu 9150
+set groups internal-bgp-key protocols bgp group <*> authentication-key /* SECRET-DATA */
+set groups isis-values protocols isis interface <*> lsp-interval 10
+set groups isis-values protocols isis interface <*> point-to-point
+set groups isis-values protocols isis interface <*> link-protection
+set groups isis-values protocols isis interface <*> level <*> hello-interval 3
+set groups isis-values protocols isis interface <*> level <*> hold-time 9
+set groups isis-values-CE protocols isis reference-bandwidth 1g
+set groups isis-values-CE protocols isis level 1 disable
+set groups isis-values-CE protocols isis level 2 wide-metrics-only
+set groups isis-values-CE protocols isis level 2 prefix-export-limit 2000
+set groups isis-values-CE protocols isis interface <*> lsp-interval 10
+set groups isis-values-CE protocols isis interface <*> point-to-point
+set groups isis-values-CE protocols isis interface <*> link-protection
+set groups isis-values-CE protocols isis interface <*> level <*> hello-interval 3
+set groups isis-values-CE protocols isis interface <*> level <*> hold-time 9
+set groups M-MTU interfaces <*> mtu 9192
+set groups M-MTU interfaces <*> unit <*> family inet mtu 9170
+set groups M-MTU interfaces <*> unit <*> family iso mtu 9167
+set groups M-MTU interfaces <*> unit <*> family mpls mtu 9150
+set groups Choto-MTU interfaces <*> mtu 1890
+set groups Choto-MTU interfaces <*> unit <*> family inet mtu 1800
+set groups Choto-MTU interfaces <*> unit <*> family iso mtu 1700
+set groups Choto-MTU interfaces <*> unit <*> family mpls mtu 1710
+set groups lldp-values protocols lldp advertisement-interval 3600
+set groups lldp-values protocols lldp transmit-delay 3600
+set apply-groups re0
+set apply-groups re1
+set system commit synchronize
+set system login class read-only-local permissions view
+set system login class read-only-local permissions view-configuration
+set system login user RO uid 2903
+set system login user RO class read-only-local
+set system login user SU uid 2904
+set system login user SU class super-user
+set system login user INOC uid 2002
+set system login user INOC class super-user
+set system login user r3m0t3.93 uid 2003
+set system login user r3m0t3.93 class super-user
+set system login user r3m0t3.93 authentication encrypted-password /* SECRET-DATA */
+set system root-authentication encrypted-password /* SECRET-DATA */
+set system time-zone America/Buenos_Aires
+set system authentication-order tacplus
+set system authentication-order password
+set system name-server 10.190.0.65
+set system tacplus-server 10.190.0.96 port 49
+set secret /* ACCESS-DENIED */;
+set system tacplus-server 10.190.0.96 timeout 3
+set system tacplus-server 10.190.0.96 single-connection
+set system tacplus-server 10.190.0.96 source-address 172.26.244.51
+set system accounting events interactive-commands
+set secret /* ACCESS-DENIED */;
+set system accounting destination tacplus server 10.190.0.96
+set system services ftp
+set system services ssh root-login deny
+set system services ssh protocol-version v2
+set system services ssh max-sessions-per-connection 32
+set system services ssh connection-limit 15
+set system services ssh rate-limit 10
+set system services telnet
+set system services netconf ssh
+set system syslog user * any emergency
+set system syslog host 172.26.244.13 any notice
+set system syslog host 172.26.244.13 authorization any
+set system syslog host 172.26.244.13 daemon info
+set system syslog host 172.26.244.13 kernel notice
+set system syslog host 172.26.244.13 interactive-commands any
+set system syslog host 172.26.244.13 facility-override local7
+set system syslog host 10.190.0.67 any info
+set system syslog host 10.190.0.67 authorization info
+set system syslog host 10.190.0.67 match "(UI_COMMIT_COMPLETED)|(RPD_BGP_NEIGHBOR_STATE_CHANGED)|(SNMP_TRAP_LINK_)|(RPD_LDP_NBRDOWN)|(RPD_ISIS_ADJ)|(RPD_LDP_NBRDOWN)|(RPD_OSPF_NBRDOWN)|(BGP_PREFIX_LIMIT_EXCEEDED)"
+set system syslog host 10.190.0.67 structured-data
+set system syslog host 172.26.244.25 any warning
+set system syslog host 172.26.244.25 authorization info
+set system syslog host 172.26.244.25 match "(UI_COMMIT_COMPLETED)|(RPD_BGP_NEIGHBOR_STATE_CHANGED)|(SNMP_TRAP_LINK_DOWN)|(RPD_LDP_NBRDOWN)|(RPD_ISIS_NBRDOWN)|(RPD_LDP_NBRDOWN)|(RPD_OSPF_NBRDOWN)"
+set system syslog host 172.26.244.25 port 6000
+set system syslog host 172.26.244.25 structured-data
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands any
+set system syslog file default-log-messages any info
+set system syslog file default-log-messages match "(requested 'commit' operation)|(requested 'commit synchronize' operation)|(copying configuration to juniper.save)|(commit complete)|ifAdminStatus|(FRU power)|(FRU removal)|(FRU insertion)|(link UP)|transitioned|Transferred|transfer-file|(license add)|(license delete)|(package -X update)|(package -X delete)|(FRU Online)|(FRU Offline)|(plugged in)|(unplugged)|CFMD_CCM_DEFECT| LFMD_3AH | RPD_MPLS_PATH_BFD|(Master Unchanged, Members Changed)|(Master Changed, Members Changed)|(Master Detected, Members Changed)|(vc add)|(vc delete)|(Master detected)|(Master changed)|(Backup detected)|(Backup changed)|(interface vcp-)"
+set system syslog file default-log-messages structured-data
+set system ntp boot-server 10.190.0.65
+set system ntp server 10.190.0.65 version 4
+set system ntp server 10.190.0.65 prefer
+set chassis redundancy routing-engine 0 master
+set chassis redundancy routing-engine 1 backup
+set chassis redundancy graceful-switchover
+set chassis aggregated-devices ethernet device-count 10
+set chassis fpc 1 pic 0 pic-mode 100G
+set chassis fpc 1 pic 1 pic-mode 100G
+set chassis fpc 3 pic 0 pic-mode 100G
+set chassis fpc 3 pic 1 pic-mode 100G
+set chassis network-services enhanced-ip
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 target address 172.26.240.26
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_DOSD3M01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 target address 172.26.240.2
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_USFLNA01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 target address 172.26.240.8
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_USGAAT01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 target address 172.26.240.10
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_ARCFOL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 target address 172.26.240.12
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_BRRJMA01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 target address 172.26.240.14
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_CLRMSL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 target address 172.26.240.16
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_CODCOR01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 target address 172.26.240.18
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_ECGYES01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 target address 172.26.240.22
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_NIBLBL01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 target address 172.26.240.24
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_PELIPO01 thresholds successive-loss 3
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 probe-type icmp-ping
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 target address 172.26.240.20
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 test-interval 1
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 source-address 172.26.240.6
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 data-size 9000
+set services rpm probe healthbot test PE_TO-3BBIRPE_GTGUPB01 thresholds successive-loss 3
+set interfaces et-1/0/2 description "FW|NA|3BBAFW_USTXST01|et-0/1/0"
+set interfaces et-1/0/2 enable
+set interfaces et-1/0/2 gigether-options 802.3ad ae0
+set interfaces xe-2/0/0 description "LS|NA|2BBALS_USTXST04|xe-0/0/46"
+set interfaces xe-2/0/0 gigether-options 802.3ad ae2
+set interfaces xe-2/0/1 description "CE|NA|2BBALS_USTXST04|xe-0/0/47"
+set interfaces xe-2/0/1 gigether-options 802.3ad ae2
+set interfaces xe-2/1/1 description "Syniverse|Roaming|r004-dal01-ngn|xe-4/0/0:1.41"
+set interfaces xe-2/1/1 flexible-vlan-tagging
+set interfaces xe-2/1/1 encapsulation flexible-ethernet-services
+set interfaces xe-2/1/1 unit 41 vlan-id 41
+set interfaces xe-2/1/1 unit 41 family inet address 200.68.160.5/30
+set interfaces ge-2/2/0 description "RR|NA|3BBIRRR_USTXST02|xe-0/1/0"
+set interfaces ge-2/2/0 speed 1g
+set interfaces ge-2/2/0 link-mode full-duplex
+set interfaces ge-2/2/0 gigether-options no-auto-negotiation
+set interfaces ge-2/2/0 gigether-options 802.3ad ae1
+set interfaces ge-2/2/1 description "RR|NA|3BBIRRR_USTXST02|xe-0/1/1"
+set interfaces ge-2/2/1 speed 1g
+set interfaces ge-2/2/1 link-mode full-duplex
+set interfaces ge-2/2/1 gigether-options no-auto-negotiation
+set interfaces ge-2/2/1 gigether-options 802.3ad ae1
+set interfaces ge-2/2/2 apply-groups interface-values
+set interfaces ge-2/2/2 description "OTN|NA|ODFJU_ST01|NA"
+set interfaces ge-2/2/2 speed 1g
+set interfaces ge-2/2/2 mtu 9170
+set interfaces ge-2/2/2 link-mode full-duplex
+set interfaces ge-2/2/2 gigether-options no-auto-negotiation
+set interfaces ge-2/2/2 unit 0 description "P to PE|NA|3BBIRP_GTGUPB01|xe-0/0/0"
+set interfaces ge-2/2/2 unit 0 family inet mtu 9148
+set interfaces ge-2/2/2 unit 0 family iso mtu 9145
+set interfaces ge-2/2/2 unit 0 family mpls mtu 9128
+set interfaces et-3/0/2 description "FW|NA|3BBAFW_USTXST01|et-2/1/0"
+set interfaces et-3/0/2 enable
+set interfaces et-3/0/2 gigether-options 802.3ad ae0
+set interfaces et-3/0/5 description "TMobile|Roaming|BRCDAL31|hu 0/2/0/6"
+set interfaces et-3/0/5 flexible-vlan-tagging
+set interfaces et-3/0/5 encapsulation flexible-ethernet-services
+set interfaces et-3/0/5 unit 41 vlan-id 41
+set interfaces et-3/0/5 unit 41 family inet address 66.94.1.147/31
+set interfaces et-3/1/2 description "Uninet|Telcel|grxint-dallas-stemmons-1|Hu 0/1/0/0"
+set interfaces et-3/1/2 flexible-vlan-tagging
+set interfaces et-3/1/2 encapsulation flexible-ethernet-services
+set interfaces et-3/1/2 unit 20 vlan-id 20
+set interfaces et-3/1/2 unit 20 family inet address 201.112.103.234/30
+set interfaces ae0 description "FW|NA|3BBAFW_USTXST01|ae0"
+set interfaces ae0 flexible-vlan-tagging
+set interfaces ae0 encapsulation flexible-ethernet-services
+set interfaces ae0 aggregated-ether-options minimum-links 1
+set interfaces ae0 aggregated-ether-options lacp active
+set interfaces ae0 unit 10 description "UNINET|TELCEL|3BBAFW_USTXST01|Be 10"
+set interfaces ae0 unit 10 vlan-id 10
+set interfaces ae0 unit 10 family inet address 172.26.245.11/31
+set interfaces ae0 unit 11 description "SYNIVERSE|Roaming|3BBAFW_USTXST01|Be 10"
+set interfaces ae0 unit 11 vlan-id 11
+set interfaces ae0 unit 11 family inet address 172.26.245.13/31
+set interfaces ae0 unit 12 description "T-MOBILE|Roaming|3BBAFW_USTXST01|Be 10"
+set interfaces ae0 unit 12 vlan-id 12
+set interfaces ae0 unit 12 family inet address 172.26.245.15/31
+set interfaces ae0 unit 13 description "UNINET|T-MOBILE|3BBAFW_USTXST01|Be 10"
+set interfaces ae0 unit 13 vlan-id 13
+set interfaces ae0 unit 13 family inet address 172.26.245.19/31
+set interfaces ae0 unit 20 description "FW|NA|3BBAFW_USTXST01|MGMT"
+set interfaces ae0 unit 20 vlan-id 20
+set interfaces ae0 unit 20 family inet address 172.26.245.17/31
+set interfaces ae1 apply-groups maximum-MTU
+set interfaces ae1 apply-groups interface-values
+set interfaces ae1 description "RR|NA|3BBIRRR_USTXST01|ae1"
+set interfaces ae1 enable
+set interfaces ae1 aggregated-ether-options minimum-links 1
+set interfaces ae1 aggregated-ether-options lacp active
+set interfaces ae1 unit 0 family inet address 10.10.11.0/31
+set interfaces ae1 unit 0 family iso
+set interfaces ae2 apply-groups M-MTU
+set interfaces ae2 apply-groups lldp-values
+set interfaces ae2 description "LS|NA|2BBALS_USTXST04|ae2"
+set interfaces ae2 vlan-tagging
+set interfaces ae2 aggregated-ether-options minimum-links 1
+set interfaces ae2 aggregated-ether-options link-speed 10g
+set interfaces ae2 aggregated-ether-options lacp active
+set interfaces ae2 unit 10 description "CE|NA|3BBARCE_USTXST01|Be 1.10"
+set interfaces ae2 unit 10 vlan-id 10
+set interfaces ae2 unit 10 family inet address 10.10.14.72/31
+set interfaces ae2 unit 10 family iso
+set interfaces ae2 unit 10 family mpls
+set interfaces ae2 unit 11 description "CE|NA|3BBARCE_USTXST02|Be 1.11"
+set interfaces ae2 unit 11 vlan-id 11
+set interfaces ae2 unit 11 family inet address 10.10.14.74/31
+set interfaces ae2 unit 11 family iso
+set interfaces ae2 unit 11 family mpls
+set interfaces ae2 unit 20 description "Uninet|NA|vpnint-dallas-bryan-24|Te 0/0/0/1"
+set interfaces ae2 unit 20 vlan-id 20
+set interfaces ae2 unit 20 family inet address 201.134.70.210/30
+set interfaces ae2 unit 21 description "Uninet|Six Financial|vpnint-dallas-bryan-24|Ten 0/0/0/1"
+set interfaces ae2 unit 21 vlan-id 21
+set interfaces ae2 unit 21 family inet mtu 1500
+set interfaces ae2 unit 21 family inet address 201.118.202.170/30
+set interfaces ae2 unit 22 description "Uninet|NEWELL BRANDS|vpnint-dallas-bryan-24|Ten 0/0/0/1"
+set interfaces ae2 unit 22 vlan-id 22
+set interfaces ae2 unit 22 family inet mtu 1500
+set interfaces ae2 unit 22 family inet address 201.118.202.126/30
+set interfaces ae2 unit 23 description "Uninet|John Deere|vpnint-dallas-bryan-24|Ten 0/0/0/1"
+set interfaces ae2 unit 23 vlan-id 23
+set interfaces ae2 unit 23 family inet mtu 1500
+set interfaces ae2 unit 23 family inet address 201.118.202.10/30
+set interfaces ae2 unit 24 description "Uninet|GoldCorp|vpnint-dallas-bryan-24|Ten 0/0/0/1"
+set interfaces ae2 unit 24 vlan-id 24
+set interfaces ae2 unit 24 family inet mtu 1500
+set interfaces ae2 unit 24 family inet address 201.118.199.22/30
+set interfaces ae2 unit 200 description "Claro NA|NA|RTVTN01_DFW1|xe-4/0/0"
+set interfaces ae2 unit 200 vlan-id 200
+set interfaces ae2 unit 200 family inet mtu 9170
+set interfaces ae2 unit 200 family inet address 10.10.14.167/31
+set interfaces ae2 unit 200 family iso
+set interfaces ae2 unit 200 family mpls
+set interfaces af0 apply-groups maximum-MTU
+set interfaces af0 apply-groups interface-values
+set interfaces af0 description "PE-P interconnection"
+set interfaces af0 unit 0 apply-groups maximum-MTU
+set interfaces af0 unit 0 apply-groups interface-values
+set interfaces af0 unit 0 description "PE-P Fabric Interface"
+set interfaces af0 unit 0 family inet address 10.10.10.1/31
+set interfaces af0 unit 0 family iso
+set interfaces af0 unit 0 family mpls
+set interfaces af1 apply-groups maximum-MTU
+set interfaces af1 apply-groups interface-values
+set interfaces af1 description "PE-P interconnection"
+set interfaces af1 unit 0 apply-groups maximum-MTU
+set interfaces af1 unit 0 apply-groups interface-values
+set interfaces af1 unit 0 description "PE-PE Fabric Interface"
+set interfaces af1 unit 0 family inet address 10.10.10.255/31
+set interfaces fxp0 unit 0 family inet
+set interfaces lo0 unit 0 family inet filter input PROTECT_RE
+set interfaces lo0 unit 0 family inet address 172.26.240.6/32 primary
+set interfaces lo0 unit 0 family inet address 172.26.240.6/32 preferred
+set interfaces lo0 unit 0 family inet address 172.26.242.6/32
+set interfaces lo0 unit 0 family iso address 47.0001.0001.4609.2006.00
+set interfaces lo0 unit 1100 description "RID UNINET-DFW"
+set interfaces lo0 unit 1100 family inet address 172.26.245.252/32
+set interfaces lo0 unit 1101 description "RID TMOBILE-DFW"
+set interfaces lo0 unit 1101 family inet address 172.26.245.248/32
+set interfaces lo0 unit 1102 description "RID SYNIVERSE-DFW"
+set interfaces lo0 unit 1102 family inet address 172.26.245.250/32
+set interfaces lo0 unit 1103 description "RID UNI-TMOBILE DFW"
+set interfaces lo0 unit 1103 family inet address 172.26.245.246/32
+set snmp name 3BBIRPE_USTXST01
+set snmp location "DALLAS USA"
+set snmp contact AMX
+set snmp filter-interfaces all-internal-interfaces
+set snmp community oymbb1pamxro
+set snmp community UltraP3rC0mm authorization read-only
+set snmp community UltraP3rC0mm clients 10.190.0.102/32
+set snmp community UltraP3rC0mm clients 100.127.11.108/32
+set snmp community UltraP3rC0mm clients 172.26.244.25/32
+set snmp community UltraP3rC0mm clients 172.26.244.11/32
+set snmp community UltraP3rC0mm clients 172.26.244.12/32
+set snmp community UltraP3rC0mm clients 172.26.244.13/32
+set snmp community UltraP3rC0mm clients 0.0.0.0/0 restrict
+set snmp trap-options source-address 172.26.244.54
+set snmp trap-group spectrum version v2
+set snmp trap-group spectrum targets 100.127.11.108
+set snmp trap-group space version v2
+set snmp trap-group space targets 172.26.244.13
+set forwarding-options hash-key family inet layer-3
+set forwarding-options hash-key family inet layer-4
+set forwarding-options hash-key family mpls label-1
+set forwarding-options hash-key family mpls label-2
+set forwarding-options hash-key family mpls payload ip
+set event-options /* ACCESS-DENIED */;
+set routing-options nonstop-routing
+set routing-options static route 0.0.0.0/0 next-hop 172.26.244.33
+set routing-options static route 0.0.0.0/0 retain
+set routing-options static route 0.0.0.0/0 no-readvertise
+set routing-options static route 10.190.0.0/26 next-hop 172.26.244.33
+set routing-options static route 10.190.0.0/26 no-readvertise
+set routing-options static route 10.190.0.0/26 no-resolve
+set routing-options static route 10.190.0.64/26 next-hop 172.26.244.33
+set routing-options static route 10.190.0.64/26 no-readvertise
+set routing-options static route 10.190.0.64/26 no-resolve
+set routing-options router-id 172.26.240.6
+set routing-options autonomous-system 46090
+set routing-options forwarding-table export pplb
+set protocols mpls icmp-tunneling
+set protocols mpls no-decrement-ttl
+set protocols mpls interface af0.0
+set protocols mpls interface lo0.0
+set protocols mpls interface ae2.11
+set protocols mpls interface ae2.10
+set protocols mpls interface ge-2/2/2.0
+set protocols bgp precision-timers
+set protocols bgp path-selection external-router-id
+set protocols bgp traceoptions file BGP.log
+set protocols bgp traceoptions file size 10m
+set protocols bgp traceoptions file files 10
+set protocols bgp traceoptions file world-readable
+set protocols bgp traceoptions flag state
+set protocols bgp traceoptions flag open
+set protocols bgp mtu-discovery
+set protocols bgp log-updown
+set protocols bgp drop-path-attributes 128
+set protocols bgp bgp-error-tolerance
+set protocols bgp group MP-IBGP type internal
+set protocols bgp group MP-IBGP multihop ttl 10
+set protocols bgp group MP-IBGP local-address 172.26.240.6
+set protocols bgp group MP-IBGP advertise-external
+set protocols bgp group MP-IBGP mtu-discovery
+set protocols bgp group MP-IBGP family inet unicast
+set protocols bgp group MP-IBGP family inet-vpn unicast add-path receive
+set protocols bgp group MP-IBGP family inet-vpn unicast add-path send path-count 4
+set protocols bgp group MP-IBGP family l2vpn signaling
+set protocols bgp group MP-IBGP family evpn signaling
+set protocols bgp group MP-IBGP family inet-mvpn signaling
+set protocols bgp group MP-IBGP authentication-key /* SECRET-DATA */
+set protocols bgp group MP-IBGP export IBGP-EXPORT-NHS
+set protocols bgp group MP-IBGP export EXPORT-CONNECTED
+set protocols bgp group MP-IBGP multipath multiple-as
+set protocols bgp group MP-IBGP bfd-liveness-detection minimum-interval 1000
+set protocols bgp group MP-IBGP bfd-liveness-detection multiplier 3
+set protocols bgp group MP-IBGP bfd-liveness-detection session-mode automatic
+set protocols bgp group MP-IBGP neighbor 172.26.240.255 description 3BBIRRR_USTXST01
+set protocols bgp group MP-IBGP neighbor 172.26.240.254 description 3BBIRRR_CODCOR01
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.254
+set protocols bgp group MP-IBGP neighbor 172.26.240.250 description 3BBIRRR_PELIPO01
+deactivate protocols bgp group MP-IBGP neighbor 172.26.240.250
+set protocols bgp group Claro-PE type external
+set protocols bgp group Claro-PE local-address 10.10.14.167
+set protocols bgp group Claro-PE mtu-discovery
+set protocols bgp group Claro-PE family inet-vpn unicast prefix-limit maximum 100000
+set protocols bgp group Claro-PE family inet-vpn unicast accepted-prefix-limit maximum 100000
+set protocols bgp group Claro-PE vpn-apply-export
+set protocols bgp group Claro-PE multipath multiple-as
+set protocols bgp group Claro-PE bfd-liveness-detection minimum-interval 100
+set protocols bgp group Claro-PE bfd-liveness-detection multiplier 3
+set protocols bgp group Claro-PE bfd-liveness-detection session-mode single-hop
+set protocols bgp group Claro-PE neighbor 10.10.14.166 description RTVTN01_DFW1
+set protocols bgp group Claro-PE neighbor 10.10.14.166 import Claro-RT-IN
+set protocols bgp group Claro-PE neighbor 10.10.14.166 family inet-vpn unicast
+set protocols bgp group Claro-PE neighbor 10.10.14.166 export Claro-RT-OUT
+set protocols bgp group Claro-PE neighbor 10.10.14.166 peer-as 36017
+set protocols isis reference-bandwidth 100g
+set protocols isis lsp-lifetime 65535
+set protocols isis spf-options delay 100
+set protocols isis overload timeout 600
+set protocols isis level 2 wide-metrics-only
+set protocols isis level 2 prefix-export-limit 2000
+set protocols isis level 1 disable
+set protocols isis interface ge-2/2/2.0 apply-groups isis-values
+set protocols isis interface ge-2/2/2.0 ldp-synchronization
+set protocols isis interface ge-2/2/2.0 point-to-point
+set protocols isis interface ge-2/2/2.0 level 2 authentication-key /* SECRET-DATA */
+set protocols isis interface ge-2/2/2.0 level 2 authentication-type md5
+set protocols isis interface ae1.0 apply-groups isis-values
+set protocols isis interface ae1.0 family inet bfd-liveness-detection minimum-interval 100
+set protocols isis interface ae1.0 family inet bfd-liveness-detection multiplier 3
+set protocols isis interface ae1.0 level 2 metric 65000
+set protocols isis interface ae1.0 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ae1.0 level 2 hello-authentication-type md5
+set protocols isis interface ae1.0 level 1 disable
+set protocols isis interface ae2.10 apply-groups isis-values-CE
+set protocols isis interface ae2.10 ldp-synchronization
+set protocols isis interface ae2.10 point-to-point
+set protocols isis interface ae2.10 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ae2.10 level 2 hello-authentication-type md5
+set protocols isis interface ae2.11 apply-groups isis-values-CE
+set protocols isis interface ae2.11 ldp-synchronization
+set protocols isis interface ae2.11 point-to-point
+set protocols isis interface ae2.11 level 2 hello-authentication-key /* SECRET-DATA */
+set protocols isis interface ae2.11 level 2 hello-authentication-type md5
+set protocols isis interface af0.0 apply-groups isis-values
+set protocols isis interface af0.0 ldp-synchronization
+set protocols isis interface af0.0 point-to-point
+set protocols isis interface af0.0 level 2 authentication-key /* SECRET-DATA */
+set protocols isis interface af0.0 level 2 authentication-type md5
+set protocols isis interface lo0.0 passive
+set protocols ospf area 0.0.0.20 interface ae1.200 interface-type p2p
+set protocols ldp traceoptions file LDP.log
+set protocols ldp traceoptions file size 5m
+set protocols ldp traceoptions file files 10
+set protocols ldp traceoptions flag state
+set protocols ldp traceoptions flag error detail
+set protocols ldp track-igp-metric
+set protocols ldp deaggregate
+set protocols ldp interface ge-2/2/2.0
+set protocols ldp interface ae2.10
+set protocols ldp interface ae2.11
+set protocols ldp interface af0.0
+set protocols ldp interface lo0.0
+set protocols ldp p2mp
+set protocols lldp port-id-subtype interface-name
+set protocols lldp interface ae2
+set protocols lldp interface ge-2/2/2 apply-groups lldp-values
+set policy-options prefix-list REMOTE_ACCESS 10.190.0.0/25
+set policy-options prefix-list REMOTE_ACCESS 100.127.10.1/32
+set policy-options prefix-list REMOTE_ACCESS 172.26.244.11/32
+set policy-options prefix-list REMOTE_ACCESS 172.26.244.12/32
+set policy-options prefix-list REMOTE_ACCESS 172.26.244.13/32
+set policy-options prefix-list REMOTE_ACCESS 172.26.244.25/32
+set policy-options prefix-list BGP_ADDRESSES 201.118.202.8/30
+set policy-options prefix-list BGP_ADDRESSES 201.118.202.124/30
+set policy-options prefix-list BGP_ADDRESSES 201.118.202.168/30
+set policy-options prefix-list BGP_ADDRESSES 201.134.70.208/30
+set policy-options prefix-list BGP_ADDRESSES apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list SNMP_ADDRESSES 10.190.0.102/32
+set policy-options prefix-list SNMP_ADDRESSES 100.127.11.108/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.11/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.12/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.13/32
+set policy-options prefix-list SNMP_ADDRESSES 172.26.244.25/32
+set policy-options prefix-list NTP_ADDRESSES 10.190.0.65/32
+set policy-options prefix-list NTP_ADDRESSES 172.26.240.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.243.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.244.0/24
+set policy-options prefix-list NTP_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 10.190.0.65/32
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.240.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.243.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.244.0/24
+set policy-options prefix-list DOMAIN_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list TACACS_ADDRESSES 10.190.0.96/32
+set policy-options prefix-list FTP_ADDRESSES 10.190.0.5/32
+set policy-options prefix-list FTP_ADDRESSES 10.190.0.95/32
+set policy-options prefix-list OSPF_ADDRESSES 172.26.245.0/24
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.68.140.240/30
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.68.141.244/30
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.68.144.240/28
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.79.17.0/25
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.8/29
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.16/28
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.32/28
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.48/28
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.64/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.96/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.128/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.160/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.224/29
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.160.232/29
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.161.0/24
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.162.160/28
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.163.128/25
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 200.95.168.0/24
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.112.103.232/30
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.134.179.0/25
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.134.179.128/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.134.179.160/27
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.144.195.0/24
+set policy-options prefix-list PXL-FROM-TELCEL-NETWORKS 201.144.196.0/25
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.9.107/32
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.9.109/32
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.9.113/32
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.9.139/32
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.9.182/32
+set policy-options prefix-list PXL-FROM-TMOBILE 66.94.28.53/32
+set policy-options prefix-list PXL-FROM-TMOBILE 172.57.0.0/20
+set policy-options prefix-list PXL-FROM-TMOBILE 172.57.16.0/20
+set policy-options prefix-list PXL-FROM-TMOBILE 172.57.32.0/19
+set policy-options prefix-list PXL-FROM-TMOBILE 172.57.64.0/18
+set policy-options prefix-list PXL-FROM-TMOBILE 172.57.128.0/17
+set policy-options prefix-list PXL-FROM-TMOBILE 208.54.96.0/19
+set policy-options prefix-list PXL-FROM-TMOBILE 208.54.144.0/25
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.160.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.161.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.162.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.163.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.164.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.165.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.166.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.167.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.168.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.169.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.170.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.171.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.172.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.173.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.174.0/24
+set policy-options prefix-list PXL-FROM-TMOBILE 216.155.175.0/24
+set policy-options prefix-list INFRA-IPV4 10.10.0.0/16
+set policy-options prefix-list LOOPBACKS 172.26.240.0/24
+set policy-options prefix-list ICMP_ACCESS 10.10.12.0/24
+set policy-options prefix-list ICMP_ACCESS 10.10.14.0/24
+set policy-options prefix-list ICMP_ACCESS 10.190.0.0/25
+set policy-options prefix-list ICMP_ACCESS 172.26.240.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.243.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.244.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.245.0/24
+set policy-options prefix-list ICMP_ACCESS 172.26.255.0/24
+set policy-options prefix-list ICMP_ACCESS 201.118.202.8/30
+set policy-options prefix-list ICMP_ACCESS 201.118.202.124/30
+set policy-options prefix-list ICMP_ACCESS 201.118.202.168/30
+set policy-options prefix-list ICMP_ACCESS 201.134.70.208/30
+set policy-options prefix-list BFD_ADDRESS 201.134.70.208/30
+set policy-options policy-statement Claro-RT-IN term 1 from protocol bgp
+set policy-options policy-statement Claro-RT-IN term 1 from community rt-46090:1001
+set policy-options policy-statement Claro-RT-IN term 1 then accept
+set policy-options policy-statement Claro-RT-IN term 2 then reject
+set policy-options policy-statement Claro-RT-OUT term 1 from protocol bgp
+set policy-options policy-statement Claro-RT-OUT term 1 from community rt-46090:1001
+set policy-options policy-statement Claro-RT-OUT term 1 then accept
+set policy-options policy-statement Claro-RT-OUT term 2 then reject
+set policy-options policy-statement DENY-ALL term 1 from protocol bgp
+set policy-options policy-statement DENY-ALL term 1 then reject
+set policy-options policy-statement DefaultRoute-syn from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement DefaultRoute-syn then accept
+set policy-options policy-statement EXPORT-ALL-SYN term 1 from aggregate-contributor
+set policy-options policy-statement EXPORT-ALL-SYN term 1 then accept
+set policy-options policy-statement EXPORT-ALL-SYN term 2 from protocol direct
+set policy-options policy-statement EXPORT-ALL-SYN term 2 from protocol bgp
+set policy-options policy-statement EXPORT-ALL-SYN term 2 from protocol ospf
+set policy-options policy-statement EXPORT-ALL-SYN term 2 from protocol static
+set policy-options policy-statement EXPORT-ALL-SYN term 2 then next-hop self
+set policy-options policy-statement EXPORT-ALL-SYN term 2 then accept
+set policy-options policy-statement EXPORT-CONNECTED term 1 from protocol direct
+set policy-options policy-statement EXPORT-CONNECTED term 1 then accept
+set policy-options policy-statement IBGP-EXPORT-NHS then next-hop self
+set policy-options policy-statement PE-Loopback-subnet term ALLOW-LOOPBACK from route-filter 0.0.0.0/0 prefix-length-range /32-/32
+set policy-options policy-statement PE-Loopback-subnet term ALLOW-LOOPBACK then accept
+set policy-options policy-statement PE-Loopback-subnet term DENY then reject
+set policy-options policy-statement PS-EXPORT-ALL term 1 from protocol direct
+set policy-options policy-statement PS-EXPORT-ALL term 1 from protocol bgp
+set policy-options policy-statement PS-EXPORT-ALL term 1 then accept
+set policy-options policy-statement PS-FROM-FW-VR-TELCEL term 1 from prefix-list PXL-FROM-TELCEL-NETWORKS
+set policy-options policy-statement PS-FROM-FW-VR-TELCEL term 1 then accept
+set policy-options policy-statement PS-FROM-FW-VR-TELCEL term End then reject
+set policy-options policy-statement PS-From-Uninet term 1 from protocol bgp
+set policy-options policy-statement PS-From-Uninet term 1 from as-path LOCAL
+set policy-options policy-statement PS-From-Uninet term 1 then reject
+set policy-options policy-statement PS-From-Uninet term 2 from protocol direct
+set policy-options policy-statement PS-From-Uninet term 2 from protocol bgp
+set policy-options policy-statement PS-From-Uninet term 2 then community add 46090:190
+set policy-options policy-statement PS-From-Uninet term 2 then accept
+set policy-options policy-statement PS-TO-FW-FROM-TMOBILE term 1 from prefix-list PXL-FROM-TMOBILE
+set policy-options policy-statement PS-TO-FW-FROM-TMOBILE term 1 then accept
+set policy-options policy-statement PS-TO-FW-FROM-TMOBILE term End then reject
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term 1 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term 1 then next-hop 172.26.245.13
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term 1 then accept
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term 2 from route-filter 65.119.117.13/32 exact
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term 2 then accept
+set policy-options policy-statement PS-TO-FW-VR-TELCEL term End then reject
+set policy-options policy-statement PS-TO-Uninet term 1 from protocol direct
+set policy-options policy-statement PS-TO-Uninet term 1 from protocol bgp
+set policy-options policy-statement PS-TO-Uninet term 1 then community add COMM-UNINET-8151
+set policy-options policy-statement PS-TO-Uninet term 1 then as-path-prepend 46090
+set policy-options policy-statement PS-TO-Uninet term 1 then accept
+set policy-options policy-statement PS-default term 1 from protocol bgp
+set policy-options policy-statement PS-default term 1 from neighbor 200.68.160.6
+set policy-options policy-statement PS-default term 1 then accept
+set policy-options policy-statement PS-default term End then reject
+set policy-options policy-statement PS-export-Syniverse term 1 from route-filter 172.26.245.0/24 orlonger
+set policy-options policy-statement PS-export-Syniverse term 1 then reject
+set policy-options policy-statement PS-export-Syniverse term 2 from prefix-list PXL-FROM-TELCEL-NETWORKS
+set policy-options policy-statement PS-export-Syniverse term 2 then as-path-prepend "46090 46090 46090"
+set policy-options policy-statement PS-export-Syniverse term 2 then accept
+set policy-options policy-statement PS-export-Syniverse term End then reject
+set policy-options policy-statement PS-export-Tmobile term 1 from route-filter 172.26.245.0/24 orlonger
+set policy-options policy-statement PS-export-Tmobile term 1 then reject
+set policy-options policy-statement PS-export-Tmobile term 2 from prefix-list PXL-FROM-TELCEL-NETWORKS
+set policy-options policy-statement PS-export-Tmobile term 2 then as-path-prepend 46090
+set policy-options policy-statement PS-export-Tmobile term 2 then accept
+set policy-options policy-statement PS-export-Tmobile term End then reject
+set policy-options policy-statement PS-export-uninet term 1 from route-filter 172.26.245.0/24 orlonger
+set policy-options policy-statement PS-export-uninet term 1 then reject
+set policy-options policy-statement PS-export-uninet term 2 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement PS-export-uninet term 2 then community set COMM-TO-UNINET
+set policy-options policy-statement PS-export-uninet term 2 then accept
+set policy-options policy-statement PS-export-uninet term 3 from prefix-list PXL-FROM-TMOBILE
+set policy-options policy-statement PS-export-uninet term 3 then community set COMM-TO-UNINET
+set policy-options policy-statement PS-export-uninet term 3 then as-path-prepend "46090 46090"
+set policy-options policy-statement PS-export-uninet term 3 then accept
+set policy-options policy-statement PS-export-uninet term 4 then reject
+set policy-options policy-statement PS-import-Syniverse term 1 from protocol bgp
+set policy-options policy-statement PS-import-Syniverse term 1 from as-path 46090
+set policy-options policy-statement PS-import-Syniverse term 1 then reject
+set policy-options policy-statement PS-import-Syniverse term 2 from protocol bgp
+set policy-options policy-statement PS-import-Syniverse term 2 then community add COMM-Syniverse
+set policy-options policy-statement PS-import-Syniverse term 2 then accept
+set policy-options policy-statement PS-import-Syniverse term End then reject
+set policy-options policy-statement PS-import-Tmobile term 1 from protocol bgp
+set policy-options policy-statement PS-import-Tmobile term 1 from as-path 46090
+set policy-options policy-statement PS-import-Tmobile term 1 then reject
+set policy-options policy-statement PS-import-Tmobile term 2 from protocol bgp
+set policy-options policy-statement PS-import-Tmobile term 2 then accept
+set policy-options policy-statement PS-import-Tmobile term End then reject
+set policy-options policy-statement PS-import-UNINET term 1 from protocol bgp
+set policy-options policy-statement PS-import-UNINET term 1 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement PS-import-UNINET term 1 then reject
+set policy-options policy-statement PS-import-UNINET term 2 from protocol bgp
+set policy-options policy-statement PS-import-UNINET term 2 from prefix-list PXL-FROM-TELCEL-NETWORKS
+set policy-options policy-statement PS-import-UNINET term 2 then accept
+set policy-options policy-statement PS-import-UNINET term 3 then reject
+set policy-options policy-statement WAN-BGP-SYN term MatchNet from protocol bgp
+set policy-options policy-statement WAN-BGP-SYN term MatchNet from route-filter 65.119.117.13/32 exact
+set policy-options policy-statement WAN-BGP-SYN term MatchNet then accept
+set policy-options policy-statement WAN-BGP-SYN term End then reject
+set policy-options policy-statement deny-all then reject
+set policy-options policy-statement direct2bgp term 10 from protocol direct
+set policy-options policy-statement direct2bgp term 10 then accept
+set policy-options policy-statement export-TMobile term 1 from route-filter 172.26.245.0/24 orlonger
+set policy-options policy-statement export-TMobile term 1 then reject
+set policy-options policy-statement export-TMobile term 2 then reject
+set policy-options policy-statement export-TO-FW term 1 from prefix-list PXL-FROM-TELCEL-NETWORKS
+set policy-options policy-statement export-TO-FW term 1 then accept
+set policy-options policy-statement export-TO-FW term End then reject
+set policy-options policy-statement export-TO-FW-from-syn term 1 from route-filter 65.119.117.13/32 exact
+set policy-options policy-statement export-TO-FW-from-syn term 1 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement export-TO-FW-from-syn term 1 then accept
+set policy-options policy-statement export-TO-FW-from-syn term End then reject
+set policy-options policy-statement export-UNINET-to-OSPF term 1 from protocol bgp
+set policy-options policy-statement export-UNINET-to-OSPF term 1 then accept
+set policy-options policy-statement export-UNINET-to-OSPF term 2 then reject
+set policy-options policy-statement import-Syniverse term 1 from protocol bgp
+set policy-options policy-statement import-Syniverse term 1 then community add COMM-Syniverse
+set policy-options policy-statement import-Syniverse term 1 then accept
+set policy-options policy-statement import-Syniverse term End then reject
+set policy-options policy-statement pplb term 1 then load-balance per-packet
+set policy-options policy-statement static2bgp term 1 from protocol static
+set policy-options policy-statement static2bgp term 1 then accept
+set policy-options policy-statement tag-syniverse term 1 from protocol bgp
+set policy-options policy-statement tag-syniverse term 1 from neighbor 200.68.160.6
+set policy-options policy-statement tag-syniverse term 1 from neighbor 200.68.160.2
+set policy-options policy-statement tag-syniverse term 1 then community add COMM-Syniverse
+set policy-options policy-statement tag-syniverse term 1 then accept
+set policy-options policy-statement tag-tmobile term 1 from protocol bgp
+set policy-options policy-statement tag-tmobile term 1 from neighbor 66.94.1.148
+set policy-options policy-statement tag-tmobile term 1 from neighbor 66.94.1.146
+set policy-options policy-statement tag-tmobile term 1 then community add COMM-TMobile
+set policy-options policy-statement tag-tmobile term 1 then accept
+set policy-options policy-statement tag-uninet term 1 from protocol bgp
+set policy-options policy-statement tag-uninet term 1 from neighbor 201.112.103.233
+set policy-options policy-statement tag-uninet term 1 from neighbor 201.112.103.237
+set policy-options policy-statement tag-uninet term 1 then community add COMM-UNINET
+set policy-options policy-statement tag-uninet term 1 then accept
+set policy-options community 46090:190 members 46090:190
+set policy-options community COMM-Syniverse members 22870:1
+set policy-options community COMM-TMobile members 10728:1
+set policy-options community COMM-TO-SYNIVERSE members 28513:250
+set policy-options community COMM-TO-UNINET members 64800:1
+set policy-options community COMM-TO-UNINET members 64800:20096
+set policy-options community COMM-TO-UNINET members 28513:402
+set policy-options community COMM-TO-UNINET members 28513:407
+set policy-options community COMM-UNINET members 8151:402
+set policy-options community COMM-UNINET members 8151:407
+set policy-options community COMM-UNINET-8151 members 8151:1028
+set policy-options community COMM-UNINET1 members 64800:1
+set policy-options community COMM-UNINET1 members 64800:20096
+set policy-options community rt-46090:1001 members target:46090:1001
+set policy-options as-path 46090 ".* 46090 .*"
+set policy-options as-path LOCAL ".* 46090 .*"
+set policy-options condition CHECK-ROUTE if-route-exists 62.140.128.96/29
+set policy-options condition CHECK-ROUTE if-route-exists table vr-syniverse.inet.0
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af41
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af42
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Video loss-priority low code-points af43
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Voz loss-priority low code-points ef
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Voz loss-priority low code-points cs5
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points cs2
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af21
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af22
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af23
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points cs3
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af31
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af32
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Datos loss-priority low code-points af33
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points cs1
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af11
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af12
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class Scavenger loss-priority high code-points af13
+set class-of-service classifiers dscp MATCH-DSCP forwarding-class BE loss-priority high code-points be
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Video loss-priority low code-points 100
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Voz loss-priority low code-points 101
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class NC loss-priority low code-points 110
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class NC loss-priority low code-points 111
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Datos loss-priority medium-low code-points 011
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Datos loss-priority low code-points 010
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class BE loss-priority high code-points 000
+set class-of-service classifiers exp CLASSIFY-MPLS-TRAFFIC forwarding-class Scavenger loss-priority high code-points 001
+set class-of-service code-point-aliases exp af11 001
+set class-of-service code-point-aliases exp af12 001
+set class-of-service code-point-aliases exp ef 101
+set class-of-service code-point-aliases exp ef1 101
+set class-of-service code-point-aliases exp af13 001
+set class-of-service code-point-aliases exp af21 010
+set class-of-service code-point-aliases exp af22 010
+set class-of-service code-point-aliases exp af23 010
+set class-of-service code-point-aliases exp af31 011
+set class-of-service code-point-aliases exp af32 011
+set class-of-service code-point-aliases exp af33 011
+set class-of-service code-point-aliases exp af41 100
+set class-of-service code-point-aliases exp af42 100
+set class-of-service code-point-aliases exp af43 100
+set class-of-service code-point-aliases exp be 000
+set class-of-service code-point-aliases exp cs1 001
+set class-of-service code-point-aliases exp cs2 010
+set class-of-service code-point-aliases exp cs3 011
+set class-of-service code-point-aliases exp cs4 100
+set class-of-service code-point-aliases exp cs5 101
+set class-of-service code-point-aliases exp cs6 110
+set class-of-service code-point-aliases exp cs7 111
+set class-of-service drop-profiles DO-NOT-DROP fill-level 100 drop-probability 0
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 50 drop-probability 50
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 80 drop-probability 90
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 90 drop-probability 95
+set class-of-service drop-profiles AGGRESSIVE-DROP fill-level 95 drop-probability 100
+set class-of-service drop-profiles MEDIUM-DROP fill-level 75 drop-probability 10
+set class-of-service drop-profiles MEDIUM-DROP fill-level 90 drop-probability 40
+set class-of-service drop-profiles MEDIUM-DROP fill-level 95 drop-probability 60
+set class-of-service drop-profiles BUFFERED-DROP fill-level 90 drop-probability 95
+set class-of-service drop-profiles BUFFERED-DROP fill-level 95 drop-probability 99
+set class-of-service drop-profiles BUFFERED-DROP fill-level 99 drop-probability 100
+set class-of-service forwarding-classes queue 0 BE
+set class-of-service forwarding-classes queue 1 Voz
+set class-of-service forwarding-classes queue 2 Video
+set class-of-service forwarding-classes queue 3 NC
+set class-of-service forwarding-classes queue 4 Datos
+set class-of-service forwarding-classes queue 5 Business
+set class-of-service forwarding-classes queue 6 Scavenger
+set class-of-service interfaces ge-2/2/2 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ge-2/2/2 unit 0 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ge-2/2/2 unit 0 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ge-2/2/2 unit 0 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ge-2/2/2 unit 0 rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces ae1 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ae1 unit * classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae1 unit * classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae1 unit * rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae1 unit * rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service interfaces ae2 scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces ae2 unit 11 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 11 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 11 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 12 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 12 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 12 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 20 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 20 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 20 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 21 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 21 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 21 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 22 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 22 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 22 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 23 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 23 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 23 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 24 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 24 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 24 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces ae2 unit 200 classifiers dscp MATCH-DSCP
+set class-of-service interfaces ae2 unit 200 classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces ae2 unit 200 rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces af* scheduler-map 7-QUEUES-SCHEDULER-MAP
+set class-of-service interfaces af* unit * classifiers dscp MATCH-DSCP
+set class-of-service interfaces af* unit * classifiers exp CLASSIFY-MPLS-TRAFFIC
+set class-of-service interfaces af* unit * rewrite-rules exp MAINTAIN-EXP
+set class-of-service interfaces af* unit * rewrite-rules inet-precedence MAINTAIN-IPP
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Datos loss-priority high code-point 011
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Datos loss-priority low code-point 010
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Video loss-priority high code-point 100
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Video loss-priority low code-point 100
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Voz loss-priority high code-point 101
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Voz loss-priority low code-point 101
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class NC loss-priority low code-point 111
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class NC loss-priority high code-point 110
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class BE loss-priority high code-point 000
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class BE loss-priority low code-point 000
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Scavenger loss-priority high code-point 001
+set class-of-service rewrite-rules exp MAINTAIN-EXP forwarding-class Scavenger loss-priority low code-point 001
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Video loss-priority low code-point 100
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Voz loss-priority low code-point 101
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class NC loss-priority low code-point 111
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Datos loss-priority medium-low code-point 011
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Datos loss-priority low code-point 010
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class BE loss-priority high code-point 000
+set class-of-service rewrite-rules inet-precedence MAINTAIN-IPP forwarding-class Scavenger loss-priority high code-point 001
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class BE scheduler BE
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Scavenger scheduler Scavenger
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Datos scheduler Datos
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Video scheduler Video
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class Voz scheduler Voz
+set class-of-service scheduler-maps 7-QUEUES-SCHEDULER-MAP forwarding-class NC scheduler NC
+set class-of-service schedulers Voz shaping-rate percent 30
+set class-of-service schedulers Voz buffer-size temporal 15k
+set class-of-service schedulers Voz priority strict-high
+set class-of-service schedulers Video transmit-rate percent 20
+set class-of-service schedulers Video buffer-size percent 20
+set class-of-service schedulers Video priority high
+set class-of-service schedulers Video drop-profile-map loss-priority any protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers Datos transmit-rate percent 20
+set class-of-service schedulers Datos buffer-size percent 20
+set class-of-service schedulers Datos priority medium-high
+set class-of-service schedulers Datos drop-profile-map loss-priority any protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers NC transmit-rate percent 5
+set class-of-service schedulers NC buffer-size percent 5
+set class-of-service schedulers NC priority high
+set class-of-service schedulers BE transmit-rate percent 5
+set class-of-service schedulers BE buffer-size percent 5
+set class-of-service schedulers BE priority low
+set class-of-service schedulers BE drop-profile-map loss-priority any protocol any drop-profile BUFFERED-DROP
+set class-of-service schedulers Business transmit-rate percent 5
+set class-of-service schedulers Business buffer-size percent 5
+set class-of-service schedulers Business priority low
+set class-of-service schedulers Business drop-profile-map loss-priority low protocol any drop-profile DO-NOT-DROP
+set class-of-service schedulers Business drop-profile-map loss-priority high protocol any drop-profile AGGRESSIVE-DROP
+set class-of-service schedulers Scavenger transmit-rate remainder
+set class-of-service schedulers Scavenger buffer-size remainder
+set class-of-service schedulers Scavenger priority low
+set class-of-service schedulers Scavenger drop-profile-map loss-priority any protocol any drop-profile AGGRESSIVE-DROP
+set firewall family inet filter PROTECT_RE term SSH from source-prefix-list REMOTE_ACCESS
+set firewall family inet filter PROTECT_RE term SSH from protocol tcp
+set firewall family inet filter PROTECT_RE term SSH from destination-port ssh
+set firewall family inet filter PROTECT_RE term SSH then accept
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG from first-fragment
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG then count FIRST-FRAG-COUNTER
+set firewall family inet filter PROTECT_RE term FRAGMENT-FIRST-FRAG then discard
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG from is-fragment
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG then count NEXT-FRAG-COUNTER
+set firewall family inet filter PROTECT_RE term FRAGMENT-NEXT-FRAG then discard
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED from source-prefix-list ICMP_ACCESS
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED from protocol icmp
+set firewall family inet filter PROTECT_RE term ICMP_TRUSTED then accept
+set firewall family inet filter PROTECT_RE term ICMP from protocol icmp
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type echo-request
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type echo-reply
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type unreachable
+set firewall family inet filter PROTECT_RE term ICMP from icmp-type time-exceeded
+set firewall family inet filter PROTECT_RE term ICMP then policer SMALL_BW_POLICER
+set firewall family inet filter PROTECT_RE term ICMP then accept
+set firewall family inet filter PROTECT_RE term TRACEROUTE from protocol udp
+set firewall family inet filter PROTECT_RE term TRACEROUTE from destination-port 33408-33535
+set firewall family inet filter PROTECT_RE term TRACEROUTE then policer SMALL_BW_POLICER
+set firewall family inet filter PROTECT_RE term TRACEROUTE then accept
+set firewall family inet filter PROTECT_RE term TACACS from source-prefix-list TACACS_ADDRESSES
+set firewall family inet filter PROTECT_RE term TACACS from protocol tcp
+set firewall family inet filter PROTECT_RE term TACACS from port tacacs
+set firewall family inet filter PROTECT_RE term TACACS then accept
+set firewall family inet filter PROTECT_RE term NETCONF from source-prefix-list REMOTE_ACCESS
+set firewall family inet filter PROTECT_RE term NETCONF from protocol tcp
+set firewall family inet filter PROTECT_RE term NETCONF from destination-port 830
+set firewall family inet filter PROTECT_RE term NETCONF then accept
+set firewall family inet filter PROTECT_RE term BGP_IN from source-prefix-list BGP_ADDRESSES
+set firewall family inet filter PROTECT_RE term BGP_IN from protocol tcp
+set firewall family inet filter PROTECT_RE term BGP_IN from destination-port bgp
+set firewall family inet filter PROTECT_RE term BGP_IN then accept
+set firewall family inet filter PROTECT_RE term LDP_IN from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term LDP_IN from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term LDP_IN from protocol tcp
+set firewall family inet filter PROTECT_RE term LDP_IN from protocol udp
+set firewall family inet filter PROTECT_RE term LDP_IN from port ldp
+set firewall family inet filter PROTECT_RE term LDP_IN then accept
+set firewall family inet filter PROTECT_RE term RSVP from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term RSVP from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term RSVP from protocol rsvp
+set firewall family inet filter PROTECT_RE term RSVP then accept
+set firewall family inet filter PROTECT_RE term OSPF from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term OSPF from protocol ospf
+set firewall family inet filter PROTECT_RE term OSPF then accept
+set firewall family inet filter PROTECT_RE term BFD_IN from prefix-list INFRA-IPV4
+set firewall family inet filter PROTECT_RE term BFD_IN from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term BFD_IN from prefix-list BFD_ADDRESS
+set firewall family inet filter PROTECT_RE term BFD_IN from protocol udp
+set firewall family inet filter PROTECT_RE term BFD_IN then accept
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED from protocol tcp
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED from tcp-established
+set firewall family inet filter PROTECT_RE term TCP-ESTABLISHED then accept
+set firewall family inet filter PROTECT_RE term SNMP from source-prefix-list SNMP_ADDRESSES
+set firewall family inet filter PROTECT_RE term SNMP from protocol udp
+set firewall family inet filter PROTECT_RE term SNMP from destination-port snmp
+set firewall family inet filter PROTECT_RE term SNMP then accept
+set firewall family inet filter PROTECT_RE term NTP from source-prefix-list NTP_ADDRESSES
+set firewall family inet filter PROTECT_RE term NTP from protocol udp
+set firewall family inet filter PROTECT_RE term NTP from port ntp
+set firewall family inet filter PROTECT_RE term NTP then accept
+set firewall family inet filter PROTECT_RE term DOMAIN from source-prefix-list DOMAIN_ADDRESSES
+set firewall family inet filter PROTECT_RE term DOMAIN from protocol udp
+set firewall family inet filter PROTECT_RE term DOMAIN from port domain
+set firewall family inet filter PROTECT_RE term DOMAIN then accept
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from prefix-list LOOPBACKS
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from protocol udp
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING from port 8503
+set firewall family inet filter PROTECT_RE term LSP-SELF-PING then accept
+set firewall family inet filter PROTECT_RE term OTHER then count DROP
+set firewall family inet filter PROTECT_RE term OTHER then log
+set firewall family inet filter PROTECT_RE term OTHER then discard
+set firewall family inet filter QOS-IN interface-specific
+set firewall family inet filter QOS-IN term NC from dscp cs6
+set firewall family inet filter QOS-IN term NC from dscp cs7
+set firewall family inet filter QOS-IN term NC then count CONT_NC
+set firewall family inet filter QOS-IN term NC then forwarding-class NC
+set firewall family inet filter QOS-IN term VOZ from dscp ef
+set firewall family inet filter QOS-IN term VOZ from dscp cs5
+set firewall family inet filter QOS-IN term VOZ then count CONT_VOZ
+set firewall family inet filter QOS-IN term VOZ then forwarding-class Voz
+set firewall family inet filter QOS-IN term VIDEO from dscp af43
+set firewall family inet filter QOS-IN term VIDEO from dscp af42
+set firewall family inet filter QOS-IN term VIDEO from dscp af41
+set firewall family inet filter QOS-IN term VIDEO from dscp cs4
+set firewall family inet filter QOS-IN term VIDEO then count CONT_VIDEO
+set firewall family inet filter QOS-IN term VIDEO then forwarding-class Video
+set firewall family inet filter QOS-IN term DATOS_CRITICOS from dscp af33
+set firewall family inet filter QOS-IN term DATOS_CRITICOS from dscp af32
+set firewall family inet filter QOS-IN term DATOS_CRITICOS from dscp af31
+set firewall family inet filter QOS-IN term DATOS_CRITICOS from dscp cs3
+set firewall family inet filter QOS-IN term DATOS_CRITICOS then count CONT_DC
+set firewall family inet filter QOS-IN term DATOS_CRITICOS then forwarding-class Datos
+set firewall family inet filter QOS-IN term BUSINESS from dscp af23
+set firewall family inet filter QOS-IN term BUSINESS from dscp af22
+set firewall family inet filter QOS-IN term BUSINESS from dscp af21
+set firewall family inet filter QOS-IN term BUSINESS from dscp cs2
+set firewall family inet filter QOS-IN term BUSINESS then count CONT_BUSIN
+set firewall family inet filter QOS-IN term BUSINESS then forwarding-class Datos
+set firewall family inet filter QOS-IN term DEFAULT from dscp be
+set firewall family inet filter QOS-IN term DEFAULT then count CONT_DEFAULT
+set firewall family inet filter QOS-IN term DEFAULT then forwarding-class BE
+set firewall family inet filter QOS-IN term DEFAULT then accept
+set firewall policer SMALL_BW_POLICER if-exceeding bandwidth-limit 1m
+set firewall policer SMALL_BW_POLICER if-exceeding burst-size-limit 15k
+set firewall policer SMALL_BW_POLICER then discard
+set firewall policer QP-STRIP-DDOS-POLICER if-exceeding bandwidth-percent 1
+set firewall policer QP-STRIP-DDOS-POLICER if-exceeding burst-size-limit 125k
+set firewall policer QP-STRIP-DDOS-POLICER then discard
+set firewall policer TCP-POLICER if-exceeding bandwidth-limit 500k
+set firewall policer TCP-POLICER if-exceeding burst-size-limit 15k
+set firewall policer TCP-POLICER then discard
+set firewall filter test-in term 10 from protocol udp
+set firewall filter test-in term 10 from destination-port 3784
+set firewall filter test-in term 10 then count bfd-in
+set firewall filter test-in term 10 then accept
+set firewall filter test-in term 20 then accept
+set firewall filter test-out term 10 from protocol udp
+set firewall filter test-out term 10 from destination-port 3784
+set firewall filter test-out term 10 then count bfd-out
+set firewall filter test-out term 10 then accept
+set firewall filter test-out term 20 then accept
+set routing-instances femsa instance-type vrf
+set routing-instances femsa interface ae2.20
+set routing-instances femsa route-distinguisher 46090:60520
+set routing-instances femsa vrf-target target:46090:1003
+set routing-instances femsa vrf-table-label
+set routing-instances femsa routing-options router-id 201.134.70.210
+set routing-instances femsa routing-options autonomous-system 46090
+set routing-instances femsa protocols bgp group L3VPN-eBGP type external
+set routing-instances femsa protocols bgp group L3VPN-eBGP local-address 201.134.70.210
+set routing-instances femsa protocols bgp group L3VPN-eBGP log-updown
+set routing-instances femsa protocols bgp group L3VPN-eBGP damping
+set routing-instances femsa protocols bgp group L3VPN-eBGP import PS-From-Uninet
+set routing-instances femsa protocols bgp group L3VPN-eBGP family inet unicast
+set routing-instances femsa protocols bgp group L3VPN-eBGP export PS-TO-Uninet
+set routing-instances femsa protocols bgp group L3VPN-eBGP peer-as 28513
+set routing-instances femsa protocols bgp group L3VPN-eBGP neighbor 201.134.70.209 peer-as 28513
+set routing-instances goldcorp instance-type vrf
+set routing-instances goldcorp interface ae2.24
+set routing-instances goldcorp route-distinguisher 172.26.240.6:1005
+set routing-instances goldcorp vrf-target target:46090:1005
+set routing-instances goldcorp vrf-table-label
+set routing-instances goldcorp routing-options router-id 201.118.199.22
+set routing-instances goldcorp routing-options autonomous-system 46090
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP type external
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP local-address 201.118.199.22
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP log-updown
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP damping
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP import DENY-ALL
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP family inet unicast prefix-limit maximum 10000
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP family inet unicast accepted-prefix-limit maximum 10000
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP export DENY-ALL
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP remove-private
+set routing-instances goldcorp protocols bgp group L3VPN-eBGP neighbor 201.118.199.21 peer-as 28513
+set routing-instances johndeere instance-type vrf
+set routing-instances johndeere interface ae2.23
+set routing-instances johndeere route-distinguisher 172.26.240.6:1004
+set routing-instances johndeere vrf-target target:46090:1004
+set routing-instances johndeere vrf-table-label
+set routing-instances johndeere routing-options router-id 201.118.202.10
+set routing-instances johndeere routing-options autonomous-system 46090
+set routing-instances johndeere protocols bgp group L3VPN-eBGP type external
+set routing-instances johndeere protocols bgp group L3VPN-eBGP local-address 201.118.202.10
+set routing-instances johndeere protocols bgp group L3VPN-eBGP log-updown
+set routing-instances johndeere protocols bgp group L3VPN-eBGP damping
+set routing-instances johndeere protocols bgp group L3VPN-eBGP import DENY-ALL
+set routing-instances johndeere protocols bgp group L3VPN-eBGP family inet unicast prefix-limit maximum 10000
+set routing-instances johndeere protocols bgp group L3VPN-eBGP family inet unicast accepted-prefix-limit maximum 10000
+set routing-instances johndeere protocols bgp group L3VPN-eBGP export DENY-ALL
+set routing-instances johndeere protocols bgp group L3VPN-eBGP remove-private
+set routing-instances johndeere protocols bgp group L3VPN-eBGP neighbor 201.118.202.9 peer-as 28513
+set routing-instances newell-brands instance-type vrf
+set routing-instances newell-brands interface ae2.22
+set routing-instances newell-brands route-distinguisher 172.26.240.6:1006
+set routing-instances newell-brands vrf-target target:46090:1006
+set routing-instances newell-brands vrf-table-label
+set routing-instances newell-brands routing-options router-id 201.118.202.126
+set routing-instances newell-brands routing-options autonomous-system 46090
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP type external
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP local-address 201.118.202.126
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP log-updown
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP damping
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP import DENY-ALL
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP family inet unicast prefix-limit maximum 10000
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP family inet unicast accepted-prefix-limit maximum 10000
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP export DENY-ALL
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP remove-private
+set routing-instances newell-brands protocols bgp group L3VPN-eBGP neighbor 201.118.202.125 peer-as 28513
+set routing-instances sixfinancial instance-type vrf
+set routing-instances sixfinancial interface ae2.21
+set routing-instances sixfinancial route-distinguisher 172.26.240.6:1007
+set routing-instances sixfinancial vrf-target target:46090:1007
+set routing-instances sixfinancial vrf-table-label
+set routing-instances sixfinancial routing-options router-id 201.118.202.170
+set routing-instances sixfinancial routing-options autonomous-system 46090
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP type external
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP local-address 201.118.202.170
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP log-updown
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP damping
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP import DENY-ALL
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP family inet unicast prefix-limit maximum 10000
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP family inet unicast accepted-prefix-limit maximum 10000
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP export DENY-ALL
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP remove-private
+set routing-instances sixfinancial protocols bgp group L3VPN-eBGP neighbor 201.118.202.169 peer-as 28513
+set routing-instances vr-syniverse instance-type virtual-router
+set routing-instances vr-syniverse interface xe-2/1/1.41
+set routing-instances vr-syniverse interface ae0.11
+set routing-instances vr-syniverse interface lo0.1102
+set routing-instances vr-syniverse routing-options generate route 0.0.0.0/0 policy PS-default
+set routing-instances vr-syniverse routing-options router-id 172.26.245.250
+set routing-instances vr-syniverse routing-options autonomous-system 46090
+set routing-instances vr-syniverse protocols bgp family inet unicast loops 1
+set routing-instances vr-syniverse protocols bgp group Syniverse type external
+set routing-instances vr-syniverse protocols bgp group Syniverse description Syniverse
+set routing-instances vr-syniverse protocols bgp group Syniverse local-address 200.68.160.5
+set routing-instances vr-syniverse protocols bgp group Syniverse log-updown
+set routing-instances vr-syniverse protocols bgp group Syniverse damping
+set routing-instances vr-syniverse protocols bgp group Syniverse import PS-import-Syniverse
+set routing-instances vr-syniverse protocols bgp group Syniverse family inet unicast prefix-limit maximum 100000
+set routing-instances vr-syniverse protocols bgp group Syniverse export PS-export-Syniverse
+set routing-instances vr-syniverse protocols bgp group Syniverse neighbor 200.68.160.6 description Syniverse
+set routing-instances vr-syniverse protocols bgp group Syniverse neighbor 200.68.160.6 peer-as 22870
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW type external
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW description "eBGP TO-FW-SRX5600"
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW local-address 172.26.245.13
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW log-updown
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW family inet unicast prefix-limit maximum 100000
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW authentication-key /* SECRET-DATA */
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW export PS-TO-FW-VR-TELCEL
+set routing-instances vr-syniverse protocols bgp group eBGP-2-FW neighbor 172.26.245.12 peer-as 64622
+set routing-instances vr-tmobile instance-type virtual-router
+set routing-instances vr-tmobile interface et-3/0/5.41
+set routing-instances vr-tmobile interface ae0.12
+set routing-instances vr-tmobile interface lo0.1101
+set routing-instances vr-tmobile routing-options router-id 172.26.245.248
+set routing-instances vr-tmobile routing-options autonomous-system 46090
+set routing-instances vr-tmobile protocols bgp family inet unicast loops 1
+set routing-instances vr-tmobile protocols bgp group TMobile type external
+set routing-instances vr-tmobile protocols bgp group TMobile description "TMobile ASN10728"
+set routing-instances vr-tmobile protocols bgp group TMobile local-address 66.94.1.147
+set routing-instances vr-tmobile protocols bgp group TMobile log-updown
+set routing-instances vr-tmobile protocols bgp group TMobile damping
+set routing-instances vr-tmobile protocols bgp group TMobile import PS-import-Tmobile
+set routing-instances vr-tmobile protocols bgp group TMobile family inet unicast prefix-limit maximum 100000
+set routing-instances vr-tmobile protocols bgp group TMobile authentication-key /* SECRET-DATA */
+set routing-instances vr-tmobile protocols bgp group TMobile export PS-export-Tmobile
+set routing-instances vr-tmobile protocols bgp group TMobile neighbor 66.94.1.146 description "TMobile ASN10728"
+set routing-instances vr-tmobile protocols bgp group TMobile neighbor 66.94.1.146 peer-as 10728
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW type external
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW description "eBGP TO-FW-SRX5600"
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW local-address 172.26.245.15
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW log-updown
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW import PS-FROM-FW-VR-TELCEL
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW family inet unicast prefix-limit maximum 100000
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW authentication-key /* SECRET-DATA */
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW export PS-TO-FW-FROM-TMOBILE
+set routing-instances vr-tmobile protocols bgp group eBGP-2-FW neighbor 172.26.245.14 peer-as 64622
+set routing-instances vr-uni-syniverse instance-type virtual-router
+set routing-instances vr-uni-syniverse interface et-3/1/2.20
+set routing-instances vr-uni-syniverse interface ae0.10
+set routing-instances vr-uni-syniverse interface lo0.1100
+set routing-instances vr-uni-syniverse routing-options router-id 172.26.245.252
+set routing-instances vr-uni-syniverse routing-options autonomous-system 46090
+set routing-instances vr-uni-syniverse protocols bgp family inet unicast loops 1
+set routing-instances vr-uni-syniverse protocols bgp group UNINET type external
+set routing-instances vr-uni-syniverse protocols bgp group UNINET description UNINET-AS8151
+set routing-instances vr-uni-syniverse protocols bgp group UNINET local-address 201.112.103.234
+set routing-instances vr-uni-syniverse protocols bgp group UNINET log-updown
+set routing-instances vr-uni-syniverse protocols bgp group UNINET damping
+set routing-instances vr-uni-syniverse protocols bgp group UNINET import PS-import-UNINET
+set routing-instances vr-uni-syniverse protocols bgp group UNINET family inet unicast prefix-limit maximum 100000
+set routing-instances vr-uni-syniverse protocols bgp group UNINET export PS-export-uninet
+set routing-instances vr-uni-syniverse protocols bgp group UNINET neighbor 201.112.103.233 peer-as 8151
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW type external
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW description "eBGP TO FW-SRX56000-From vr-Syniverse"
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW local-address 172.26.245.11
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW log-updown
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW family inet unicast prefix-limit maximum 100000
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW authentication-key /* SECRET-DATA */
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW export PS-EXPORT-ALL
+set routing-instances vr-uni-syniverse protocols bgp group eBGP-2-FW neighbor 172.26.245.10 peer-as 64622
+set routing-instances vr-uni-tmobile instance-type virtual-router
+set routing-instances vr-uni-tmobile interface ae0.13
+set routing-instances vr-uni-tmobile interface lo0.1103
+set routing-instances vr-uni-tmobile routing-options router-id 172.26.245.246
+set routing-instances vr-uni-tmobile routing-options autonomous-system 46090
+set routing-instances vr-uni-tmobile protocols bgp group ibgp type internal
+set routing-instances vr-uni-tmobile protocols bgp group ibgp multihop ttl 10
+set routing-instances vr-uni-tmobile protocols bgp group ibgp local-address 172.26.245.246
+set routing-instances vr-uni-tmobile protocols bgp group ibgp log-updown
+set routing-instances vr-uni-tmobile protocols bgp group ibgp family inet unicast
+set routing-instances vr-uni-tmobile protocols bgp group ibgp export direct2bgp
+set routing-instances vr-uni-tmobile protocols bgp group ibgp export tag-uninet
+set routing-instances vr-uni-tmobile protocols bgp group ibgp bfd-liveness-detection minimum-interval 350
+set routing-instances vr-uni-tmobile protocols bgp group ibgp bfd-liveness-detection multiplier 3
+set routing-instances vr-uni-tmobile protocols bgp group ibgp bfd-liveness-detection session-mode automatic
+set routing-instances vr-uni-tmobile protocols bgp group ibgp neighbor 172.26.245.254 description "FW DFW"
+deactivate routing-instances vr-uni-tmobile protocols bgp group ibgp neighbor 172.26.245.254
+set routing-instances vr-uni-tmobile protocols bgp group ibgp neighbor 172.26.245.248 description "TMOBILE DFW"
+deactivate routing-instances vr-uni-tmobile protocols bgp
+set routing-instances vr-uni-tmobile protocols ospf area 0.0.0.0 interface lo0.1103
+set routing-instances vr-uni-tmobile protocols ospf area 0.0.0.0 interface ae0.13
+
+{master}
