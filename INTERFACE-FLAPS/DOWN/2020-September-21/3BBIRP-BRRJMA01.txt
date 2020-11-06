@@ -1,0 +1,4 @@
+
+Sep 21 15:59:52  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_DOWN: ifIndex 560, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/2
+
+{master}

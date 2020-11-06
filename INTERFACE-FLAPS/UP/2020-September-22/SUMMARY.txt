@@ -1,0 +1,375 @@
+
+Sep 22 21:06:47  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2
+
+Sep 22 21:06:47  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1511
+
+Sep 22 21:06:47  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 558, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1520
+
+Sep 22 21:06:47  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 565, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1524
+
+Sep 22 21:06:47  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 554, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.32767
+
+Sep 22 21:29:30  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2
+
+Sep 22 21:29:30  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1511
+
+Sep 22 21:29:30  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 558, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1520
+
+Sep 22 21:29:30  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 565, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.1524
+
+Sep 22 21:29:30  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 554, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.32767
+
+Sep 22 13:05:13  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName lo0.20
+
+Sep 22 13:05:33  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName lsi.0
+
+Sep 22 12:00:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:00:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:00:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:00:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:00:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:00:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:00:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:00:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:00:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:00:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:00:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:00:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:00:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:00:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:00:47  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:00:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:00:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:00:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:00:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:00:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:00:56  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:00:56  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:00:56  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:00:56  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:00:56  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:14:48  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:14:48  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:14:48  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:14:48  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:14:48  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:17:22  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:17:22  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:17:22  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:17:22  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:17:22  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:17:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:17:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:17:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:17:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:17:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:18:33  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:18:33  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:18:33  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:18:33  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:18:33  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:19:36  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:19:36  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:19:36  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:19:36  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:19:36  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:19:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:19:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:19:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:19:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:19:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:19:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:19:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:19:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:19:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:19:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:24:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:24:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:24:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:24:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:24:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:24:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:24:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:24:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:24:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:24:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:25:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:25:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:25:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:25:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:25:41  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:25:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:25:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:25:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:25:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:25:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:25:58  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:25:58  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:25:58  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:25:58  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:25:58  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:11  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:11  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:11  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:11  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:11  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:13  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:13  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:13  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:13  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:13  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:20  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:20  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:20  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:20  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:20  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:28  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:28  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:28  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:28  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:28  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:26:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:26:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:26:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:26:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:26:32  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:26:32  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:26:32  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:26:32  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:26:32  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:27:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:27:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:27:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:27:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:27:25  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:27:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:27:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:27:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:27:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:27:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:27:53  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:27:53  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:27:53  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:27:53  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:27:53  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:28:01  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:28:01  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:28:01  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:28:01  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:28:01  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:28:03  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:28:03  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:28:03  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:28:03  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:28:03  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 12:28:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 12:28:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 12:28:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 12:28:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 12:28:43  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 12:28:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 12:28:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 12:28:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 12:28:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 12:28:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 17:54:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 535, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Sep 22 17:54:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 573, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.10
+
+Sep 22 17:54:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 583, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.500
+
+Sep 22 17:54:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 585, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.3060
+
+Sep 22 17:54:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 569, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.32767
+
+Sep 22 17:54:29  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 568, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50
+
+Sep 22 17:54:29  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.10
+
+Sep 22 17:54:29  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 582, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.500
+
+Sep 22 17:54:29  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 584, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.3060
+
+Sep 22 17:54:29  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 571, ifAdminStatus up(1), ifOperStatus up(1), ifName ae50.32767
+
+Sep 22 18:11:35  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+
+Sep 22 18:11:35  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1500
+
+Sep 22 18:11:35  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 541, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1506
+
+Sep 22 18:11:35  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 542, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1524
+
+Sep 22 18:11:35  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 540, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+
+Sep 22 18:31:33  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+
+Sep 22 18:31:33  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1500
+
+Sep 22 18:31:33  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 541, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1506
+
+Sep 22 18:31:33  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 542, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1524
+
+Sep 22 18:31:33  3BBIRP_BRRJMA01-re0 mib2d[6701]: SNMP_TRAP_LINK_UP: ifIndex 540, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+

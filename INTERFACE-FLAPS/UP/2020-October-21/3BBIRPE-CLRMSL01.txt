@@ -1,0 +1,4 @@
+
+Oct 21 14:59:21  3BBIRPE_CLRMSL01-re0 mib2d[6631]: SNMP_TRAP_LINK_UP: ifIndex 575, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/1.1902
+
+{master}

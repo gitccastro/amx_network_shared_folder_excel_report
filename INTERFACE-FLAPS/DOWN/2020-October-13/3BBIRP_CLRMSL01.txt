@@ -1,0 +1,8 @@
+
+Oct 13 11:49:33  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Oct 13 12:12:42  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_DOWN: ifIndex 539, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/4
+Oct 13 12:23:47  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_DOWN: ifIndex 539, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/4
+Oct 13 12:29:33  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Oct 13 16:43:43  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+
+{master}

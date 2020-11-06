@@ -1,0 +1,12 @@
+3BBIRP_GTGUPB01 
+3BBIRP_GTGUPB01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPGTGUPB01|Port 1/4"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/0 unit 1511 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/2"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/0 unit 1517 description "P to P|NA|3BBIRP_CODCOR01|xe-0/0/0"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPGTGUPB01|PS2 Port 1/12"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/1 unit 1531 description "P to P|NA|3BBIRP_USTXST01|xe-0/0/0"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPGTGUPB01|NA"
+3BBIRP_GTGUPB01 set interfaces xe-0/0/3 description "3BBIRPE_MXQOKU01|TenGE0/0/1/2 EN IMPLEMENTACION"
+3BBIRP_GTGUPB01 set interfaces af0 description "P-PE interconnection"
+3BBIRP_GTGUPB01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP_GTGUPB01 
+3BBIRP_GTGUPB01 {master}

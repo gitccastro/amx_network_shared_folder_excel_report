@@ -1,0 +1,6 @@
+
+Oct 16 14:45:27  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Oct 16 14:47:50  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Oct 16 23:41:42  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+
+{master}

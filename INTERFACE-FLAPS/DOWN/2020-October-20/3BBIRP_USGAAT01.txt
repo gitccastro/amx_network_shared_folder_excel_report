@@ -1,0 +1,5 @@
+
+Oct 20 13:09:54  3BBIRP_USGAAT01-re0 mib2d[6748]: SNMP_TRAP_LINK_DOWN: ifIndex 536, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/1
+Oct 20 23:30:06  3BBIRP_USGAAT01-re0 mib2d[6748]: SNMP_TRAP_LINK_DOWN: ifIndex 536, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/1
+
+{master}

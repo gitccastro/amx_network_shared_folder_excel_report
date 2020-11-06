@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_USGAAT01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -3.98 dBm
+ Output power level for interface ('xe-0/0/0',) : -2.54 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -5.02 dBm
+ Output power level for interface ('xe-0/0/1',) : -2.77 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -3.20 dBm
+ Output power level for interface ('xe-0/0/2',) : -3.11 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : - Inf dBm
+ Output power level for interface ('xe-0/0/3',) : -2.45 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : - Inf dBm
+ Output power level for interface ('xe-0/0/4',) : -0.95 dBm
+**************************************************************************************************

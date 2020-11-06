@@ -1,0 +1,11 @@
+
+Oct 31 07:14:31  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 31 07:14:31  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 31 08:36:46  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 537, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2
+Oct 31 08:36:46  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.0
+Oct 31 09:00:52  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 537, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2
+Oct 31 09:00:52  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/2.0
+Oct 31 17:15:23  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 31 17:15:23  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+
+{master}

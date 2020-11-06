@@ -1,0 +1,10 @@
+
+Nov  3 10:02:39  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 551, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-0/0/0.1526
+Nov  3 12:04:50  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 539, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/4
+Nov  3 12:04:50  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Nov  3 15:40:10  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Nov  3 15:40:27  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 538, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/3
+Nov  3 19:18:02  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/2
+Nov  3 19:51:00  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/2
+
+{master}

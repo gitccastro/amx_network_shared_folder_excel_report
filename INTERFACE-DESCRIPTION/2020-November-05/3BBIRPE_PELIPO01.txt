@@ -1,0 +1,61 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE_PELIPO01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/1 : 
+ Admin status ('xe-2/0/1',) : down
+ Oper status ('xe-2/0/1',) : down
+ Description ('xe-2/0/1',) : OTN|NA|4LDIPOTPPELIPO01|Port 1/10
+
+ Interface xe-2/1/0 : 
+ Admin status ('xe-2/1/0',) : up
+ Oper status ('xe-2/1/0',) : up
+ Description ('xe-2/1/0',) : Claro PEPO|NA|rMPLSPolo1_01|Gi 10/0/3
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : CE|NA|3BBARCE_PELIPO01|Gi 1/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : CE|NA|3BBARCE_PELIPO02|Gi 1/12
+
+ Interface ge-2/2/3 : 
+ Admin status ('ge-2/2/3',) : up
+ Oper status ('ge-2/2/3',) : up
+ Description ('ge-2/2/3',) : OTN|NA|4LDIPOTPPELIPO01|Port 1/5
+
+ Interface ge-2/2/4 : 
+ Admin status ('ge-2/2/4',) : up
+ Oper status ('ge-2/2/4',) : up
+ Description ('ge-2/2/4',) : Claro PEPO|Roaming|rMPLSInternacionalPolo1|Gi 0/0/1
+
+ Interface ge-2/2/6 : 
+ Admin status ('ge-2/2/6',) : up
+ Oper status ('ge-2/2/6',) : up
+ Description ('ge-2/2/6',) : RR|NA|3BBIRRR_PELIPO01|ge-0/0/10
+
+ Interface ge-2/3/6 : 
+ Admin status ('ge-2/3/6',) : up
+ Oper status ('ge-2/3/6',) : up
+ Description ('ge-2/3/6',) : RR|NA|3BBIRRR_PELIPO01|ge-0/0/11
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : RR|NA|3BBIRRR_PELIPO01|ae1
+
+ Interface ae30 : 
+ Admin status ('ae30',) : up
+ Oper status ('ae30',) : up
+ Description ('ae30',) : Claro PEPO|NA|rMPLSPolo1_02|Eth-Trunk30
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

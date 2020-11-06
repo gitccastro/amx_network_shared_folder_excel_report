@@ -1,0 +1,11 @@
+3BBIRP-BRRJMA01 
+3BBIRP-BRRJMA01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPBRRJMA01|Port 1/4"
+3BBIRP-BRRJMA01 set interfaces xe-0/0/0 unit 1506 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/0"
+3BBIRP-BRRJMA01 set interfaces xe-0/0/0 unit 1524 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/0"
+3BBIRP-BRRJMA01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPBRRJMA01|Port 1/10"
+3BBIRP-BRRJMA01 set interfaces xe-0/0/2 description "OTN|4LDIPOTPBRRJMA01|PSM-2S-PS2-Slot1-Port12|TO-3BBIRP_ARCFOL01-XE-0/0/2"
+3BBIRP-BRRJMA01 set interfaces xe-0/0/2 unit 1500 description "P to P|NA|3BBIRP_ARCFOL01|xe-0/0/2"
+3BBIRP-BRRJMA01 set interfaces af0 description "P-PE interconnection"
+3BBIRP-BRRJMA01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP-BRRJMA01 
+3BBIRP-BRRJMA01 {master}

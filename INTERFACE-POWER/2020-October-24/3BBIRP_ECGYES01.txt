@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_ECGYES01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -7.54 dBm
+ Output power level for interface ('xe-0/0/0',) : -1.78 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -4.31 dBm
+ Output power level for interface ('xe-0/0/1',) : -1.76 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -4.19 dBm
+ Output power level for interface ('xe-0/0/2',) : -1.78 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -2.79 dBm
+ Output power level for interface ('xe-0/0/3',) : -2.28 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : -2.53 dBm
+ Output power level for interface ('xe-0/0/4',) : -2.31 dBm
+**************************************************************************************************

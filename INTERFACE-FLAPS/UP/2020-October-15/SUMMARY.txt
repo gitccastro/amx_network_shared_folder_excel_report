@@ -1,0 +1,67 @@
+
+Oct 15 11:24:15  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 11:24:15  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 13:17:57  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 13:17:57  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 13:22:53  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 13:22:53  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 14:06:08  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 14:06:08  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 14:11:25  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 14:11:25  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 14:14:23  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 14:14:23  3BBIRP_CODCOR01-re0 mib2d[6167]: SNMP_TRAP_LINK_UP: ifIndex 552, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 01:43:43  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_UP: ifIndex 560, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0
+
+Oct 15 01:43:43  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_UP: ifIndex 537, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/0.0
+
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 547, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1530
+
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 549, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1531
+
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 548, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+
+Oct 15 14:54:20  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 546, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 23:31:58  3BBIRP_USGAAT01-re0 mib2d[6748]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1
+
+Oct 15 23:31:58  3BBIRP_USGAAT01-re0 mib2d[6748]: SNMP_TRAP_LINK_UP: ifIndex 550, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1.0
+
+Oct 15 06:07:19  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 06:07:19  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 15:17:57  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 15:17:57  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 15:22:53  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 15:22:53  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 16:06:09  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 16:06:09  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 16:11:26  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 16:11:26  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+Oct 15 16:14:24  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 538, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3
+
+Oct 15 16:14:24  3BBIRP_CLRMSL01-re0 mib2d[6910]: SNMP_TRAP_LINK_UP: ifIndex 551, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+

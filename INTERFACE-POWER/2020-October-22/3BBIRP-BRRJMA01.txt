@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP-BRRJMA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -0.39 dBm
+ Output power level for interface ('xe-0/0/0',) : -1.62 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -0.83 dBm
+ Output power level for interface ('xe-0/0/1',) : -2.05 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -0.34 dBm
+ Output power level for interface ('xe-0/0/2',) : -2.43 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -33.98 dBm
+ Output power level for interface ('xe-0/0/3',) : - Inf dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : - Inf dBm
+ Output power level for interface ('xe-0/0/4',) : - Inf dBm
+**************************************************************************************************

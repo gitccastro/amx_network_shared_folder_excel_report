@@ -1,0 +1,31 @@
+
+Sep 10 10:15:05  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-2/1/0
+Sep 10 13:49:31  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 13:49:42  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 14:14:01  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 14:14:01  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 15:35:38  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 15:35:38  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 15:48:37  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 15:48:37  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 16:32:27  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 16:32:27  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 16:55:25  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 16:55:25  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 16:55:53  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 16:55:53  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 16:55:53  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-2/1/0
+Sep 10 17:52:47  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:52:47  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 17:53:29  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:53:29  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 17:55:03  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:55:03  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 17:55:37  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:55:37  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 17:56:16  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:56:16  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+Sep 10 17:56:50  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 575, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.3060
+Sep 10 17:56:50  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 576, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/1/0.32767
+
+{master}

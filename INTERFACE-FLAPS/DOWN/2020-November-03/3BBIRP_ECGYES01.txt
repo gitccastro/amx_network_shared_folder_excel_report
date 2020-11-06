@@ -1,0 +1,6 @@
+
+Nov  3 12:04:50  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_DOWN: ifIndex 539, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/4
+Nov  3 15:40:10  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/2
+Nov  3 15:40:27  3BBIRP_ECGYES01-re0 mib2d[6613]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/2
+
+{master}

@@ -1,0 +1,36 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_ECGYES01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Admin status ('xe-0/0/0',) : up
+ Oper status ('xe-0/0/0',) : up
+ Description ('xe-0/0/0',) : OTN|NA|4LDIPOTPECGUES01|Port 1/4
+
+ Interface xe-0/0/1 : 
+ Admin status ('xe-0/0/1',) : up
+ Oper status ('xe-0/0/1',) : up
+ Description ('xe-0/0/1',) : OTN|NA|4LDIPOTPECGUES01|2-1-15
+
+ Interface xe-0/0/2 : 
+ Admin status ('xe-0/0/2',) : up
+ Oper status ('xe-0/0/2',) : up
+ Description ('xe-0/0/2',) : OTN-HUAWEI-GYEESTW9809-0-1-2
+
+ Interface xe-0/0/3 : 
+ Admin status ('xe-0/0/3',) : up
+ Oper status ('xe-0/0/3',) : down
+ Description ('xe-0/0/3',) : OTN-HUAWEI-GYEESTW9809-0-1-3
+
+ Interface xe-0/0/4 : 
+ Admin status ('xe-0/0/4',) : up
+ Oper status ('xe-0/0/4',) : down
+ Description ('xe-0/0/4',) : OTN-HUAWEI-GYEESTW9801-0-1-1
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : P-PE interconnection
+**************************************************************************************************

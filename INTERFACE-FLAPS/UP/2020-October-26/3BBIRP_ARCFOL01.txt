@@ -1,0 +1,23 @@
+
+Oct 26 14:38:26  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 14:38:26  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 15:24:12  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 15:24:12  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 16:51:19  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 16:51:19  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 16:52:02  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 16:52:02  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 16:54:32  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 16:54:32  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 19:21:39  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 19:21:39  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 19:22:30  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 19:22:30  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 19:23:30  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 19:23:30  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 19:23:45  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 19:23:45  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+Oct 26 20:01:52  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 539, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4
+Oct 26 20:01:52  3BBIRP_ARCFOL01-re0 mib2d[2459]: SNMP_TRAP_LINK_UP: ifIndex 553, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/4.0
+
+{master}

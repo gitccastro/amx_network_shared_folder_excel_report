@@ -1,0 +1,15 @@
+3BBIRPE-CODCOR01 
+3BBIRPE-CODCOR01 set interfaces xe-2/0/0 description "Claro COOR|NA|A9KORTEZAL2|Te 0/0/0/19"
+3BBIRPE-CODCOR01 set interfaces xe-2/1/0 description "TO-THBASUBA2|OTN|TenGigE0/3/0/21"
+3BBIRPE-CODCOR01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_CODCOR01|Gi 1/12"
+3BBIRPE-CODCOR01 set interfaces ge-2/2/1 description "CE|NA|3BBARCE_CODCOR02|Gi 1/12"
+3BBIRPE-CODCOR01 set interfaces ge-2/2/3 description "PE to PE|IARCCOBOGORT-ECGGUCLL-GE1_-001|2BBALS_ECQICO01|TE3/2"
+3BBIRPE-CODCOR01 set interfaces ge-2/2/3 unit 2100 description "PE to PE|IARCCOBOGORT-ECGGUCLL-GE1_-001|VPN_GSR_O01|TE1/0/0"
+3BBIRPE-CODCOR01 set interfaces ge-2/2/6 description "RR|NA|3BBIRRR_CODCOR01|ge-0/0/10"
+3BBIRPE-CODCOR01 set interfaces ge-2/3/6 description "RR|NA|3BBIRRR_CODCOR01|ge-0/0/11"
+3BBIRPE-CODCOR01 set interfaces ae1 description "RR|NA|3BBIRRR_CODCOR01|ae1"
+3BBIRPE-CODCOR01 set interfaces ae50 description "Claro COOR|NA|A9KORTEZAL2|BE 50"
+3BBIRPE-CODCOR01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE-CODCOR01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE-CODCOR01 
+3BBIRPE-CODCOR01 {master}

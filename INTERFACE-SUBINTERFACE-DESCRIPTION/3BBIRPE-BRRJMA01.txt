@@ -1,0 +1,18 @@
+3BBIRPE-BRRJMA01 
+3BBIRPE-BRRJMA01 set interfaces xe-2/0/0 description "Claro Rio|NA|puacc03.rjo|TenGigE 0/1/0/0"
+3BBIRPE-BRRJMA01 set interfaces xe-2/0/0 unit 0 description "Claro Rio|VPNINT|puacc03.rjo|TenGigE 0/1/0/0"
+3BBIRPE-BRRJMA01 set interfaces xe-2/0/1 description "Claro Rio|Roaming-Corp|RJMCK01-RTA01|TenGigE 13/3"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_BRRJMA01|Gi 4/12"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/1 description "CE|NA|3BBARCE_BRRJMA02|Gi 4/12"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/2 description "OTN|ICLRARABAOLL-BRSPOPEN-GE1_-002|4LDIPOTPBRRJMA01|PSM-2S, PS2, Slot 1, Port 7"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/2 unit 1701 description "PE to CE|ICLRARABAOLL-BRSPOPEN-GE1_-002|3BBARCE_BRSPMB02|Gi4/12"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/3 description "AMX CE|AMX|3BBARCE_CLRCDR01|GI 1/12"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/3 unit 1901 description "AMX CE|AMX|3BBARCE_CLRCDR01|GI 1/12"
+3BBIRPE-BRRJMA01 set interfaces xe-2/2/3 description "OTN|NA|4LDIPOTPBRRJMA01|Port 1/7"
+3BBIRPE-BRRJMA01 set interfaces ge-2/2/6 description "RR|NA|3BBARRR_BRRJAM01|ge-0/0/10"
+3BBIRPE-BRRJMA01 set interfaces ge-2/3/6 description "RR|NA|3BBARRR_BRRJAM01|ge-0/0/11"
+3BBIRPE-BRRJMA01 set interfaces ae1 description "RR|NA|3BBARRR_BRRJAM01|ae1"
+3BBIRPE-BRRJMA01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE-BRRJMA01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE-BRRJMA01 
+3BBIRPE-BRRJMA01 {master}

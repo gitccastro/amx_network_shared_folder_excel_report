@@ -1,0 +1,66 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE-USFLNA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface et-1/0/2 : 
+ Admin status ('et-1/0/2',) : up
+ Oper status ('et-1/0/2',) : up
+ Description ('et-1/0/2',) : FW|NA|3BBAFW_USFLNA03|et-0/1/0
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : LS|NA|2BBALS_USFLNA01|xe-0/0/46
+
+ Interface xe-2/0/1 : 
+ Admin status ('xe-2/0/1',) : up
+ Oper status ('xe-2/0/1',) : up
+ Description ('xe-2/0/1',) : LS|NA|2BBALS_USFLNA01|xe-0/0/47
+
+ Interface xe-2/1/1 : 
+ Admin status ('xe-2/1/1',) : up
+ Oper status ('xe-2/1/1',) : up
+ Description ('xe-2/1/1',) : Syniverse|Roaming|r005-mia-ngn|xe-1/3/0.41
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : down
+ Description ('ge-2/2/0',) : OTN|NA|4LDIPOTPUSFLN201|Port 19/20
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : OTN|NA|4LDIPOTPUSFLN201|Port 21/22
+
+ Interface et-3/0/2 : 
+ Admin status ('et-3/0/2',) : up
+ Oper status ('et-3/0/2',) : up
+ Description ('et-3/0/2',) : FW|NA|3BBAFW_USFLNA03|et-2/1/0
+
+ Interface et-3/0/5 : 
+ Admin status ('et-3/0/5',) : up
+ Oper status ('et-3/0/5',) : down
+ Description ('et-3/0/5',) : TMobile|Roaming|BRCELG31|hu 0/2/0/6
+
+ Interface et-3/1/2 : 
+ Admin status ('et-3/1/2',) : up
+ Oper status ('et-3/1/2',) : up
+ Description ('et-3/1/2',) : grxint-miami-americas-1.Hu0/1/0/0
+
+ Interface ae0 : 
+ Admin status ('ae0',) : up
+ Oper status ('ae0',) : up
+ Description ('ae0',) : FW|NA|3BBAFW_USFLNA03|ae0
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : LS|NA|TO-2BBALS_USFLNA01|ae1
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

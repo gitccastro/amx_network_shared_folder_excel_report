@@ -1,0 +1,7 @@
+
+Oct 22 19:35:32  3BBIRPE_ECGYES01-re0 mib2d[6669]: SNMP_TRAP_LINK_UP: ifIndex 577, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/3
+Oct 22 19:38:30  3BBIRPE_ECGYES01-re0 mib2d[6669]: SNMP_TRAP_LINK_UP: ifIndex 576, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/2
+Oct 22 19:42:33  3BBIRPE_ECGYES01-re0 mib2d[6669]: SNMP_TRAP_LINK_UP: ifIndex 576, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/2
+Oct 22 19:44:18  3BBIRPE_ECGYES01-re0 mib2d[6669]: SNMP_TRAP_LINK_UP: ifIndex 577, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/3
+
+{master}

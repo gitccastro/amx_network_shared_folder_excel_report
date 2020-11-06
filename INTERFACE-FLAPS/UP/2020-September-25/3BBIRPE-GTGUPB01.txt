@@ -1,0 +1,4 @@
+
+Sep 25 15:06:56  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 574, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.0
+
+{master}

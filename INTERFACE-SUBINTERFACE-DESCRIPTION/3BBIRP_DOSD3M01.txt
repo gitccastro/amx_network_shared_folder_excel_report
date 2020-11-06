@@ -1,0 +1,11 @@
+3BBIRP_DOSD3M01 
+3BBIRP_DOSD3M01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPDOSASA01|NA"
+3BBIRP_DOSD3M01 set interfaces xe-0/0/0 unit 1513 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/1"
+3BBIRP_DOSD3M01 set interfaces xe-0/0/0 unit 1518 description "P to P|NA|3BBIRP_NIBLBL01|xe-0/0/0"
+3BBIRP_DOSD3M01 set interfaces xe-0/0/0 unit 1519 description "P to P|NA|3BBIRP_CODCOR01|xe-0/0/0"
+3BBIRP_DOSD3M01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPDOSASA01|NA"
+3BBIRP_DOSD3M01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPDOSASA01|NA"
+3BBIRP_DOSD3M01 set interfaces af0 description "P-PE interconnection"
+3BBIRP_DOSD3M01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP_DOSD3M01 
+3BBIRP_DOSD3M01 {master}

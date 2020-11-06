@@ -1,0 +1,8 @@
+
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 547, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1530
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 549, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1531
+Oct 15 09:02:14  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 548, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+Oct 15 14:54:20  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 546, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/3.0
+
+{master}

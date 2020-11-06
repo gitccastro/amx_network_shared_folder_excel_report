@@ -1,0 +1,61 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE-BRRJMA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : Claro Rio|NA|puacc03.rjo|TenGigE 0/1/0/0
+
+ Interface xe-2/0/1 : 
+ Admin status ('xe-2/0/1',) : up
+ Oper status ('xe-2/0/1',) : up
+ Description ('xe-2/0/1',) : Claro Rio|Roaming-Corp|RJMCK01-RTA01|TenGigE 13/3
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : CE|NA|3BBARCE_BRRJMA01|Gi 4/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : CE|NA|3BBARCE_BRRJMA02|Gi 4/12
+
+ Interface ge-2/2/2 : 
+ Admin status ('ge-2/2/2',) : up
+ Oper status ('ge-2/2/2',) : down
+ Description ('ge-2/2/2',) : OTN|ICLRARABAOLL-BRSPOPEN-GE1_-002|4LDIPOTPBRRJMA01|PSM-2S, PS2, Slot 1, Port 7
+
+ Interface ge-2/2/3 : 
+ Admin status ('ge-2/2/3',) : up
+ Oper status ('ge-2/2/3',) : up
+ Description ('ge-2/2/3',) : AMX CE|AMX|3BBARCE_CLRCDR01|GI 1/12
+
+ Interface xe-2/2/3 : 
+ Admin status ('xe-2/2/3',) : None
+ Oper status ('xe-2/2/3',) : None
+ Description ('xe-2/2/3',) : OTN|NA|4LDIPOTPBRRJMA01|Port 1/7
+
+ Interface ge-2/2/6 : 
+ Admin status ('ge-2/2/6',) : up
+ Oper status ('ge-2/2/6',) : up
+ Description ('ge-2/2/6',) : RR|NA|3BBARRR_BRRJAM01|ge-0/0/10
+
+ Interface ge-2/3/6 : 
+ Admin status ('ge-2/3/6',) : up
+ Oper status ('ge-2/3/6',) : up
+ Description ('ge-2/3/6',) : RR|NA|3BBARRR_BRRJAM01|ge-0/0/11
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : RR|NA|3BBARRR_BRRJAM01|ae1
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

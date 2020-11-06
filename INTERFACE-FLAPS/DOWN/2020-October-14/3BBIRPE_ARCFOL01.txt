@@ -1,0 +1,6 @@
+
+Oct 14 13:58:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 523, ifAdminStatus up(1), ifOperStatus down(2), ifName vtnet1
+Oct 14 13:59:27  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 523, ifAdminStatus down(2), ifOperStatus down(2), ifName vtnet1
+Oct 14 13:59:55  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 523, ifAdminStatus up(1), ifOperStatus down(2), ifName vtnet1
+
+{master}

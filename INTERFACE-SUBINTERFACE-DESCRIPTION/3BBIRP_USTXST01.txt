@@ -1,0 +1,13 @@
+3BBIRP_USTXST01 
+3BBIRP_USTXST01 set interfaces xe-0/0/0 description "OTN|NA|4LDIUTP_USFLNA201|Port 20/2/10"
+3BBIRP_USTXST01 set interfaces xe-0/0/0 unit 1530 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/4"
+3BBIRP_USTXST01 set interfaces xe-0/0/0 unit 1531 description "P to P|NA|3BBIRP_GTGUPB01|xe-0/0/1"
+3BBIRP_USTXST01 set interfaces xe-0/0/1 description "TELIA|NTELUSDALSTE-USNYC60H-GE10-001|NA|NA"
+3BBIRP_USTXST01 set interfaces xe-0/0/1 unit 0 description "P to P|NTELUSDALSTE-USNYC60H-GE10-001|3BBIRP_USNYNE01|xe-0/0/0.0"
+3BBIRP_USTXST01 set interfaces xe-0/0/2 description "LATAM-Cable Terrestre|NTELUSDALSTE-USGAAMAR-GE10-001|NA|NA"
+3BBIRP_USTXST01 set interfaces xe-0/0/2 unit 0 description "P to P|NTELUSDALSTE-USGAAMAR-GE10-001|3BBIRP_USGAAT01|xe-0/0/0"
+3BBIRP_USTXST01 set interfaces xe-0/0/3 description TO-SWXCN01-CLX01-GE-0/0/6-TO-VL-2300
+3BBIRP_USTXST01 set interfaces af0 description "P-PE|Fabric Interface|3BBIRPE_USTXST01|af0"
+3BBIRP_USTXST01 set interfaces af0 unit 0 description "P-PE|Fabric Interface|3BBIRPE_USTXST01|af0.0"
+3BBIRP_USTXST01 
+3BBIRP_USTXST01 {master}

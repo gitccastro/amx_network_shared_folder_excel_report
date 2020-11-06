@@ -1,0 +1,134 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE-USFLNA01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface et-1/0/2 : 
+ Input power level for interface ('et-1/0/2',) : None dBm
+ Output power level for interface ('et-1/0/2',) : None dBm
+
+ Interface et-1/0/5 : 
+ Input power level for interface ('et-1/0/5',) : None dBm
+ Output power level for interface ('et-1/0/5',) : None dBm
+
+ Interface et-1/1/2 : 
+ Input power level for interface ('et-1/1/2',) : None dBm
+ Output power level for interface ('et-1/1/2',) : None dBm
+
+ Interface et-1/1/5 : 
+ Input power level for interface ('et-1/1/5',) : None dBm
+ Output power level for interface ('et-1/1/5',) : None dBm
+
+ Interface xe-2/0/0 : 
+ Input power level for interface ('xe-2/0/0',) : None dBm
+ Output power level for interface ('xe-2/0/0',) : -2.96 dBm
+
+ Interface xe-2/0/1 : 
+ Input power level for interface ('xe-2/0/1',) : None dBm
+ Output power level for interface ('xe-2/0/1',) : -2.07 dBm
+
+ Interface xe-2/1/0 : 
+ Input power level for interface ('xe-2/1/0',) : None dBm
+ Output power level for interface ('xe-2/1/0',) : - Inf dBm
+
+ Interface xe-2/1/1 : 
+ Input power level for interface ('xe-2/1/1',) : None dBm
+ Output power level for interface ('xe-2/1/1',) : -2.17 dBm
+
+ Interface ge-2/2/0 : 
+ Input power level for interface ('ge-2/2/0',) : - Inf dBm
+ Output power level for interface ('ge-2/2/0',) : -6.56 dBm
+
+ Interface ge-2/2/1 : 
+ Input power level for interface ('ge-2/2/1',) : -5.85 dBm
+ Output power level for interface ('ge-2/2/1',) : -6.44 dBm
+
+ Interface ge-2/2/2 : 
+ Input power level for interface ('ge-2/2/2',) : - Inf dBm
+ Output power level for interface ('ge-2/2/2',) : - Inf dBm
+
+ Interface ge-2/2/3 : 
+ Input power level for interface ('ge-2/2/3',) : - Inf dBm
+ Output power level for interface ('ge-2/2/3',) : - Inf dBm
+
+ Interface ge-2/2/4 : 
+ Input power level for interface ('ge-2/2/4',) : - Inf dBm
+ Output power level for interface ('ge-2/2/4',) : - Inf dBm
+
+ Interface ge-2/2/5 : 
+ Input power level for interface ('ge-2/2/5',) : - Inf dBm
+ Output power level for interface ('ge-2/2/5',) : - Inf dBm
+
+ Interface ge-2/2/6 : 
+ Input power level for interface ('ge-2/2/6',) : - Inf dBm
+ Output power level for interface ('ge-2/2/6',) : - Inf dBm
+
+ Interface ge-2/2/7 : 
+ Input power level for interface ('ge-2/2/7',) : - Inf dBm
+ Output power level for interface ('ge-2/2/7',) : - Inf dBm
+
+ Interface ge-2/2/8 : 
+ Input power level for interface ('ge-2/2/8',) : - Inf dBm
+ Output power level for interface ('ge-2/2/8',) : - Inf dBm
+
+ Interface ge-2/2/9 : 
+ Input power level for interface ('ge-2/2/9',) : - Inf dBm
+ Output power level for interface ('ge-2/2/9',) : - Inf dBm
+
+ Interface ge-2/3/0 : 
+ Input power level for interface ('ge-2/3/0',) : - Inf dBm
+ Output power level for interface ('ge-2/3/0',) : - Inf dBm
+
+ Interface ge-2/3/1 : 
+ Input power level for interface ('ge-2/3/1',) : - Inf dBm
+ Output power level for interface ('ge-2/3/1',) : - Inf dBm
+
+ Interface ge-2/3/2 : 
+ Input power level for interface ('ge-2/3/2',) : - Inf dBm
+ Output power level for interface ('ge-2/3/2',) : - Inf dBm
+
+ Interface ge-2/3/3 : 
+ Input power level for interface ('ge-2/3/3',) : - Inf dBm
+ Output power level for interface ('ge-2/3/3',) : - Inf dBm
+
+ Interface ge-2/3/4 : 
+ Input power level for interface ('ge-2/3/4',) : - Inf dBm
+ Output power level for interface ('ge-2/3/4',) : - Inf dBm
+
+ Interface ge-2/3/5 : 
+ Input power level for interface ('ge-2/3/5',) : - Inf dBm
+ Output power level for interface ('ge-2/3/5',) : - Inf dBm
+
+ Interface ge-2/3/6 : 
+ Input power level for interface ('ge-2/3/6',) : - Inf dBm
+ Output power level for interface ('ge-2/3/6',) : - Inf dBm
+
+ Interface ge-2/3/7 : 
+ Input power level for interface ('ge-2/3/7',) : - Inf dBm
+ Output power level for interface ('ge-2/3/7',) : - Inf dBm
+
+ Interface ge-2/3/8 : 
+ Input power level for interface ('ge-2/3/8',) : - Inf dBm
+ Output power level for interface ('ge-2/3/8',) : - Inf dBm
+
+ Interface ge-2/3/9 : 
+ Input power level for interface ('ge-2/3/9',) : - Inf dBm
+ Output power level for interface ('ge-2/3/9',) : - Inf dBm
+
+ Interface et-3/0/2 : 
+ Input power level for interface ('et-3/0/2',) : None dBm
+ Output power level for interface ('et-3/0/2',) : None dBm
+
+ Interface et-3/0/5 : 
+ Input power level for interface ('et-3/0/5',) : None dBm
+ Output power level for interface ('et-3/0/5',) : None dBm
+
+ Interface et-3/1/2 : 
+ Input power level for interface ('et-3/1/2',) : None dBm
+ Output power level for interface ('et-3/1/2',) : None dBm
+
+ Interface et-3/1/5 : 
+ Input power level for interface ('et-3/1/5',) : None dBm
+ Output power level for interface ('et-3/1/5',) : None dBm
+**************************************************************************************************

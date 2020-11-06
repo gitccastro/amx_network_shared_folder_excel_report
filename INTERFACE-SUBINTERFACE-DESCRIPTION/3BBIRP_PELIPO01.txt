@@ -1,0 +1,10 @@
+3BBIRP_PELIPO01 
+3BBIRP_PELIPO01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPPELIPO01|Port 1/4"
+3BBIRP_PELIPO01 set interfaces xe-0/0/0 unit 1510 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/1"
+3BBIRP_PELIPO01 set interfaces xe-0/0/0 unit 1514 description "P to P|NA|3BBIRP_ECGYES01|xe-0/0/0"
+3BBIRP_PELIPO01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPPELIPO01|Port 1/9"
+3BBIRP_PELIPO01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPPELIPO01|NA"
+3BBIRP_PELIPO01 set interfaces af0 description "P-PE interconnection"
+3BBIRP_PELIPO01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP_PELIPO01 
+3BBIRP_PELIPO01 {master}

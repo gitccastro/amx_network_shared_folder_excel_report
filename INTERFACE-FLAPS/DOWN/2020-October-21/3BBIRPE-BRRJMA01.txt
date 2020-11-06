@@ -1,0 +1,6 @@
+
+Oct 21 16:00:31  3BBIRPE_BRRJMA01-re0 mib2d[6839]: SNMP_TRAP_LINK_DOWN: ifIndex 571, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/2/2.1902
+Oct 21 16:00:31  3BBIRPE_BRRJMA01-re0 mib2d[6839]: SNMP_TRAP_LINK_DOWN: ifIndex 573, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/2/2.32767
+Oct 21 16:00:31  3BBIRPE_BRRJMA01-re0 mib2d[6839]: SNMP_TRAP_LINK_DOWN: ifIndex 541, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/2/2
+
+{master}

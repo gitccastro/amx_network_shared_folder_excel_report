@@ -1,0 +1,8 @@
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 546, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1506
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 557, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1508
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 562, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1525
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 547, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+
+{master}

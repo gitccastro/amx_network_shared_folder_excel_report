@@ -1,0 +1,10 @@
+3BBIRP_NIBLBL01 
+3BBIRP_NIBLBL01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPNIASBL01|Port 1/3"
+3BBIRP_NIBLBL01 set interfaces xe-0/0/0 unit 1512 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/1"
+3BBIRP_NIBLBL01 set interfaces xe-0/0/0 unit 1518 description "P to P|NA|3BBIRP_DOSD3M01|xe-0/0/0"
+3BBIRP_NIBLBL01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPNIASBL01|Port 1/13"
+3BBIRP_NIBLBL01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPNIASBL01|NA"
+3BBIRP_NIBLBL01 set interfaces af0 description "P-PE interconnection"
+3BBIRP_NIBLBL01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP_NIBLBL01 
+3BBIRP_NIBLBL01 {master}

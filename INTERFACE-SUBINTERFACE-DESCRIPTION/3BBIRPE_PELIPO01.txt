@@ -1,0 +1,16 @@
+3BBIRPE_PELIPO01 
+3BBIRPE_PELIPO01 set interfaces xe-2/0/1 description "OTN|NA|4LDIPOTPPELIPO01|Port 1/10"
+3BBIRPE_PELIPO01 set interfaces xe-2/1/0 description "Claro PEPO|NA|rMPLSPolo1_01|Gi 10/0/3"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_PELIPO01|Gi 1/12"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/1 description "CE|NA|3BBARCE_PELIPO02|Gi 1/12"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/3 description "OTN|NA|4LDIPOTPPELIPO01|Port 1/5"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/3 unit 1900 description "Claro CLFA|PE3-SRO_CLRMSROROU06|TenGig 0/0/1/2"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/4 description "Claro PEPO|Roaming|rMPLSInternacionalPolo1|Gi 0/0/1"
+3BBIRPE_PELIPO01 set interfaces ge-2/2/6 description "RR|NA|3BBIRRR_PELIPO01|ge-0/0/10"
+3BBIRPE_PELIPO01 set interfaces ge-2/3/6 description "RR|NA|3BBIRRR_PELIPO01|ge-0/0/11"
+3BBIRPE_PELIPO01 set interfaces ae1 description "RR|NA|3BBIRRR_PELIPO01|ae1"
+3BBIRPE_PELIPO01 set interfaces ae30 description "Claro PEPO|NA|rMPLSPolo1_02|Eth-Trunk30"
+3BBIRPE_PELIPO01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE_PELIPO01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE_PELIPO01 
+3BBIRPE_PELIPO01 {master}

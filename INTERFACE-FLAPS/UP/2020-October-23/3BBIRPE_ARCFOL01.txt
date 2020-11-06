@@ -1,0 +1,5 @@
+
+Oct 23 18:33:30  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 608, ifAdminStatus up(1), ifOperStatus up(1), ifName lo0.971
+Oct 23 18:33:49  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 609, ifAdminStatus up(1), ifOperStatus up(1), ifName lsi.264
+
+{master}

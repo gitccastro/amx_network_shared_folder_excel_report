@@ -1,0 +1,15 @@
+3BBIRP_CODCOR01 
+3BBIRP_CODCOR01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPCODCOR01|Port 1/4"
+3BBIRP_CODCOR01 set interfaces xe-0/0/0 unit 1508 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/0"
+3BBIRP_CODCOR01 set interfaces xe-0/0/0 unit 1516 description "P to P|NA|3BBIRP_ECGYES01|xe-0/0/0"
+3BBIRP_CODCOR01 set interfaces xe-0/0/0 unit 1517 description "P to P|NA|3BBIRP_GTGUPB01|xe-0/0/0"
+3BBIRP_CODCOR01 set interfaces xe-0/0/0 unit 1519 description "P to P|NA|3BBIRP_DOSD3M01|xe-0/0/0"
+3BBIRP_CODCOR01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPCODCOR01|NA"
+3BBIRP_CODCOR01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPCODCOR01|NA"
+3BBIRP_CODCOR01 set interfaces xe-0/0/2 unit 3060 description "P to P|xxxxxx|3BBIRP_ARCFOL01|xe-0/0/1.3060"
+3BBIRP_CODCOR01 set interfaces xe-0/0/3 description "OTN|Huawei Toberin|C2470OLLS52|Shelf0-Slot32-Port-2|TO-3BBIRP_ARCFOL01-XE-0/0/4"
+3BBIRP_CODCOR01 set interfaces xe-0/0/4 unit 0 description "P to P|ICLRCOBOGTOB-ECGGUEST-GE10-001|3BBIRP_ECGYES01|xe-0/0/4"
+3BBIRP_CODCOR01 set interfaces af0 description "P-PE interconnection"
+3BBIRP_CODCOR01 set interfaces af0 unit 0 description "P-PE Fabric Interface"
+3BBIRP_CODCOR01 
+3BBIRP_CODCOR01 {master}

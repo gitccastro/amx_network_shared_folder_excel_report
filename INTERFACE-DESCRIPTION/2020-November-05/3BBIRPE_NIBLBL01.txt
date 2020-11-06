@@ -1,0 +1,31 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE_NIBLBL01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/1 : 
+ Admin status ('xe-2/0/1',) : None
+ Oper status ('xe-2/0/1',) : None
+ Description ('xe-2/0/1',) : OTN|NA|4LDIPOTPNIASBL01|Port 1/14
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : None
+ Oper status ('ge-2/2/1',) : None
+ Description ('ge-2/2/1',) : CE|3BBARCE_GTGUGV02|GE1/13
+
+ Interface ge-2/2/2 : 
+ Admin status ('ge-2/2/2',) : None
+ Oper status ('ge-2/2/2',) : None
+ Description ('ge-2/2/2',) : Claro BLUEFIELDS|NA|BLU-CSCASR9006-M1|Gi 0/3/0/13
+
+ Interface ge-2/3/8 : 
+ Admin status ('ge-2/3/8',) : None
+ Oper status ('ge-2/3/8',) : None
+ Description ('ge-2/3/8',) : BLU-CSCASR9006-M1|Gi0/3/0/0
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : down
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

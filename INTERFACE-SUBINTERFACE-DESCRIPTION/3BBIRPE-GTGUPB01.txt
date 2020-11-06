@@ -1,0 +1,13 @@
+3BBIRPE-GTGUPB01 
+3BBIRPE-GTGUPB01 set interfaces xe-2/0/0 description "Claro GTPB|NA|IPBAGTPBN1D1FFM3|TE 0/1/1/1"
+3BBIRPE-GTGUPB01 set interfaces xe-2/0/1 description "Claro COZF|NA|A9KTOBERIN|TE 0/1/0/19"
+3BBIRPE-GTGUPB01 set interfaces ge-2/2/1 description "CE|3BBARCE_GTGUGV01|GE1/13"
+3BBIRPE-GTGUPB01 set interfaces ge-2/2/6 description "RR|NA|3BBARRR_GTGUPB01|ge-0/0/10"
+3BBIRPE-GTGUPB01 set interfaces ge-2/3/6 description "RR|NA|3BBARRR_GTGUPB01|ge-0/0/11"
+3BBIRPE-GTGUPB01 set interfaces ge-2/3/8 description "Claro GT|NA|IPBAGTPBN1D1A10A25EIM1|GE 2/1/14"
+3BBIRPE-GTGUPB01 set interfaces ge-2/3/8 unit 2052 description "dth-mcast Claro Guatemala"
+3BBIRPE-GTGUPB01 set interfaces ae1 description "RR|NA|3BBARRR_GTGUPB01|ae1"
+3BBIRPE-GTGUPB01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE-GTGUPB01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE-GTGUPB01 
+3BBIRPE-GTGUPB01 {master}

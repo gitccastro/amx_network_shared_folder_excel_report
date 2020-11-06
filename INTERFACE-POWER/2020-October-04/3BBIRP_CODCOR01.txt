@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_CODCOR01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -3.39 dBm
+ Output power level for interface ('xe-0/0/0',) : -1.77 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -29.21 dBm
+ Output power level for interface ('xe-0/0/1',) : -1.99 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -29.59 dBm
+ Output power level for interface ('xe-0/0/2',) : -1.72 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -35.23 dBm
+ Output power level for interface ('xe-0/0/3',) : -2.00 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : -30.46 dBm
+ Output power level for interface ('xe-0/0/4',) : -2.54 dBm
+**************************************************************************************************

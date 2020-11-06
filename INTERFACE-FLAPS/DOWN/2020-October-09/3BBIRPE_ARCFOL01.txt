@@ -1,0 +1,4 @@
+
+Oct  9 12:10:45  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_DOWN: ifIndex 599, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/3/7.40
+
+{master}

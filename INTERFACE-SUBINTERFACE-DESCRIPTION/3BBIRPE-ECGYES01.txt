@@ -1,0 +1,14 @@
+3BBIRPE-ECGYES01 
+3BBIRPE-ECGYES01 set interfaces xe-2/0/0 description "LS|NA|2BBALS_ECGYES01|Te 3/2"
+3BBIRPE-ECGYES01 set interfaces xe-2/0/0 unit 900 description "Claro|Ecuador|NA|NA"
+3BBIRPE-ECGYES01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_ECGYES01|Gi 1/12"
+3BBIRPE-ECGYES01 set interfaces ge-2/2/1 description "CE|NA|3BBIRPE_ECGYES02|Gi 1/12"
+3BBIRPE-ECGYES01 set interfaces ge-2/2/3 unit 2000 description "CLARO PEVS|NA|rMPLSVillaSalvador02|Eth-Trunk30"
+3BBIRPE-ECGYES01 set interfaces ge-2/2/4 description 4LDIPOTPECGUES01-2-1-7
+3BBIRPE-ECGYES01 set interfaces ge-2/3/2 description 4LDIPOTPECGUES01-2-1-8
+3BBIRPE-ECGYES01 set interfaces ge-2/3/3 description 4LDIPOTPECGUES01-2-1-9
+3BBIRPE-ECGYES01 set interfaces ge-2/3/4 description 4LDIPOTPECGUES01-2-1-10
+3BBIRPE-ECGYES01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE-ECGYES01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE-ECGYES01 
+3BBIRPE-ECGYES01 {master}

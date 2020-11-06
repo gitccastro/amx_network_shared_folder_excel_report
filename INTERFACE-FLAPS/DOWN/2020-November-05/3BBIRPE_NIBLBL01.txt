@@ -1,0 +1,5 @@
+
+Nov  5 22:05:34  3BBIRPE-NIBLBL01-re0 mib2d[27439]: SNMP_TRAP_LINK_DOWN: ifIndex 536, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-2/0/1
+Nov  5 22:05:34  3BBIRPE-NIBLBL01-re0 mib2d[27439]: SNMP_TRAP_LINK_DOWN: ifIndex 540, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/1
+Nov  5 22:05:34  3BBIRPE-NIBLBL01-re0 mib2d[27439]: SNMP_TRAP_LINK_DOWN: ifIndex 541, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/2
+Nov  5 22:05:34  3BBIRPE-NIBLBL01-re0 mib2d[27439]: SNMP_TRAP_LINK_DOWN: ifIndex 556, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/3/8

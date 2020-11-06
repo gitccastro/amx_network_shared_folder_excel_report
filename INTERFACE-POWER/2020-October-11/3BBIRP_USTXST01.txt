@@ -1,0 +1,22 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_USTXST01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -5.15 dBm
+ Output power level for interface ('xe-0/0/0',) : -2.07 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -4.85 dBm
+ Output power level for interface ('xe-0/0/1',) : -2.79 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -2.86 dBm
+ Output power level for interface ('xe-0/0/2',) : -2.49 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -2.95 dBm
+ Output power level for interface ('xe-0/0/3',) : -1.71 dBm
+**************************************************************************************************

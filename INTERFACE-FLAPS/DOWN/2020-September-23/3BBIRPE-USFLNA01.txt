@@ -1,0 +1,8 @@
+
+Sep 23 12:55:58  3BBIRPE_USFLNA01-re0 mib2d[6202]: SNMP_TRAP_LINK_DOWN: ifIndex 690, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+Sep 23 12:56:16  3BBIRPE_USFLNA01-re0 mib2d[6202]: SNMP_TRAP_LINK_DOWN: ifIndex 690, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+Sep 23 12:56:18  3BBIRPE_USFLNA01-re0 mib2d[6202]: SNMP_TRAP_LINK_DOWN: ifIndex 690, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+Sep 23 13:29:11  3BBIRPE_USFLNA01-re0 mib2d[6202]: SNMP_TRAP_LINK_DOWN: ifIndex 690, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+Sep 23 13:29:24  3BBIRPE_USFLNA01-re0 mib2d[6202]: SNMP_TRAP_LINK_DOWN: ifIndex 690, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+
+{master}

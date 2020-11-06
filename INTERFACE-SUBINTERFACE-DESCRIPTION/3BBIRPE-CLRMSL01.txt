@@ -1,0 +1,15 @@
+3BBIRPE-CLRMSL01 
+3BBIRPE-CLRMSL01 set interfaces xe-2/0/0 description "Claro Chile|SALTO|PE3-SLT_CLRMRESROU09|TE 0/0/1/0"
+3BBIRPE-CLRMSL01 set interfaces xe-2/0/1 description "OTN|NA|4LDIPOTPCLRMSA01|Port 1/14"
+3BBIRPE-CLRMSL01 set interfaces xe-2/0/1 unit 1601 description "Claro Argentina|Garay|TCF296-BR-01|Ten 0/1/0/2"
+3BBIRPE-CLRMSL01 set interfaces xe-2/0/1 unit 1602 description "CE|NA|3BBARCE_ARCFGR01|Gi 1/12.1602"
+3BBIRPE-CLRMSL01 set interfaces xe-2/0/1 unit 1902 description "AMX CE|AMX|3BBARCE_CLRCDR02|GI 1/12"
+3BBIRPE-CLRMSL01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_CLRMSL01|Gi 1/12"
+3BBIRPE-CLRMSL01 set interfaces ge-2/2/1 description "CE|NA|3BBARCE_CLRMSL02|Gi 1/12"
+3BBIRPE-CLRMSL01 set interfaces ge-2/2/6 description "RR|NA|3BBIRRR_CLRMSL01|ge-0/0/10"
+3BBIRPE-CLRMSL01 set interfaces ge-2/3/6 description "RR|NA|3BBIRRR_CLRMSL01|ge-0/0/11"
+3BBIRPE-CLRMSL01 set interfaces ae1 description "RR|NA|3BBIRRR_CLRMSL01|ae1"
+3BBIRPE-CLRMSL01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE-CLRMSL01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE-CLRMSL01 
+3BBIRPE-CLRMSL01 {master}

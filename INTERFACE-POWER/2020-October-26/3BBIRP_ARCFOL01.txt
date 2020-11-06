@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_ARCFOL01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -1.56 dBm
+ Output power level for interface ('xe-0/0/0',) : -1.78 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -36.99 dBm
+ Output power level for interface ('xe-0/0/1',) : - Inf dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -4.41 dBm
+ Output power level for interface ('xe-0/0/2',) : -3.05 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : -2.31 dBm
+ Output power level for interface ('xe-0/0/3',) : -2.64 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : -2.91 dBm
+ Output power level for interface ('xe-0/0/4',) : -2.08 dBm
+**************************************************************************************************

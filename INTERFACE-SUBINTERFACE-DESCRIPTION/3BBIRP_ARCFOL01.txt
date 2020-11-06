@@ -1,0 +1,16 @@
+3BBIRP_ARCFOL01 
+3BBIRP_ARCFOL01 set interfaces xe-0/0/0 description "OTN|NA|4LDIPOTPARCFOL01|Port 1/4"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/0 unit 1501 description "P to P|ICLKARABAOLL-CLSACSLT-GE4_-001|3BBIRP_CLRMSL01|xe-0/0/0.1501"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/0 unit 1520 description "P to P|NA|3BBIRP_USFLNA01|xe-0/0/2.1520"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/1 description "OTN|NA|4LDIPOTPARCFOL01|Port2-1-14"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/1 unit 3060 description "P to P|xxxxxx|3BBIRP_CODCOR01|xe-0/0/2.3060"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/2 description "OTN|NA|4LDIPOTPARCFOL01|PSM-2S-PS2-Slot1-Port 17"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/2 unit 1500 description "P to P|NA|3BBIRP_BRRJMA01|xe-0/0/2"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/3 description "OTN|NA|Huawei C2470OLLS52|Slot10-Port 1"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/3 unit 0 description "P to P|NA|3BBIRP_CLRMSL01|xe-0/0/3.0"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/4 description "OTN|NA|Huawei C2470OLLS52|Slot10-Port 2"
+3BBIRP_ARCFOL01 set interfaces xe-0/0/4 unit 0 description "P to P|NA|3BBIRP_CODCOR01|xe-0/0/3.0"
+3BBIRP_ARCFOL01 set interfaces af0 description "P-PE|Fabric Interface|3BBIRPE_ARCFOL01|af0"
+3BBIRP_ARCFOL01 set interfaces af0 unit 0 description "P-PE|Fabric Interface|3BBIRPE_ARCFOL01|af0.0"
+3BBIRP_ARCFOL01 
+3BBIRP_ARCFOL01 {master}

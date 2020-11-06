@@ -1,0 +1,4 @@
+
+Sep 11 00:24:41  3BBIRPE_NIBLBL01-re0 mib2d[7374]: SNMP_TRAP_LINK_DOWN: ifIndex 541, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/2
+
+{master}

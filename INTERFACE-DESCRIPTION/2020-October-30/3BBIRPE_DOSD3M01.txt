@@ -1,0 +1,31 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE_DOSD3M01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : Claro DO3M|NA|30MZ_ASBR|TE 0/1/0/1
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : CE|NA|3BBARCE_DOSD3M01|Gi 1/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : CE|NA|3BBARCE_DOSD3M02|Gi 1/12
+
+ Interface ge-2/2/3 : 
+ Admin status ('ge-2/2/3',) : up
+ Oper status ('ge-2/2/3',) : up
+ Description ('ge-2/2/3',) : OTN|NA|4LDIPOTPDODN3M01|Port 1/8
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

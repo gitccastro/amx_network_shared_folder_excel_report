@@ -1,0 +1,5 @@
+3BBIRPE_USGAAT01 
+3BBIRPE_USGAAT01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE_USGAAT01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE_USGAAT01 
+3BBIRPE_USGAAT01 {master}

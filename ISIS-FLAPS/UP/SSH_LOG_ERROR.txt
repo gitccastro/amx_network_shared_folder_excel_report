@@ -1,2 +1,11 @@
 Authentication failure: 3BBIRP_ECGYES01 172.26.243.23 
 Timeout to device: 3BBIRVX_CODCOR01 172.26.243.230
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 
+Timeout to device: 3BBIRPE-GTGUPB01 172.26.243.54
+Timeout to device: 3BBIRP_GTGUPB01 172.26.243.55
+Authentication failure: 3BBIRPE_USGAAT01 172.26.244.118 

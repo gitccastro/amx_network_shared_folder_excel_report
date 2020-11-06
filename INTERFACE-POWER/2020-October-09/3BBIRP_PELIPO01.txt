@@ -1,0 +1,26 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_PELIPO01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Input power level for interface ('xe-0/0/0',) : -1.95 dBm
+ Output power level for interface ('xe-0/0/0',) : -2.11 dBm
+
+ Interface xe-0/0/1 : 
+ Input power level for interface ('xe-0/0/1',) : -32.22 dBm
+ Output power level for interface ('xe-0/0/1',) : -1.59 dBm
+
+ Interface xe-0/0/2 : 
+ Input power level for interface ('xe-0/0/2',) : -36.99 dBm
+ Output power level for interface ('xe-0/0/2',) : -1.80 dBm
+
+ Interface xe-0/0/3 : 
+ Input power level for interface ('xe-0/0/3',) : - Inf dBm
+ Output power level for interface ('xe-0/0/3',) : -1.33 dBm
+
+ Interface xe-0/0/4 : 
+ Input power level for interface ('xe-0/0/4',) : -36.99 dBm
+ Output power level for interface ('xe-0/0/4',) : -1.38 dBm
+**************************************************************************************************

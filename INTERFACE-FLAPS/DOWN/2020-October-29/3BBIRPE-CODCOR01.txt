@@ -1,0 +1,4 @@
+
+Oct 29 02:16:35  3BBIRPE_CODCOR01-re0 mib2d[6128]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-2/1/0
+
+{master}

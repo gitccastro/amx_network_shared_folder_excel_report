@@ -1,0 +1,71 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE_ARCFOL01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : Claro Olleros|NA|TC2470-BR-01|TenGigE 0/1/0/1
+
+ Interface xe-2/1/0 : 
+ Admin status ('xe-2/1/0',) : up
+ Oper status ('xe-2/1/0',) : up
+ Description ('xe-2/1/0',) : OTN|NA|4LDIPOTPARCFOL01|PSM-2S, PS2, Slot 1, Port 18
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : CE|NA|3BBARCE_ARCFOL01|Gi 1/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : CE|NA|3BBARCE_ARCFOL02|Gi 1/12
+
+ Interface ge-2/2/3 : 
+ Admin status ('ge-2/2/3',) : up
+ Oper status ('ge-2/2/3',) : up
+ Description ('ge-2/2/3',) : OTN|NA|4LDIPOTPARCFOL01|Port 1/7
+
+ Interface ge-2/2/6 : 
+ Admin status ('ge-2/2/6',) : up
+ Oper status ('ge-2/2/6',) : up
+ Description ('ge-2/2/6',) : RR|NA|3BBIRRR_ARCFOL01|ge-0/0/10
+
+ Interface ge-2/3/0 : 
+ Admin status ('ge-2/3/0',) : down
+ Oper status ('ge-2/3/0',) : down
+ Description ('ge-2/3/0',) : LAB-CISCO|DATOS|DVT-BorderT|2
+
+ Interface ge-2/3/1 : 
+ Admin status ('ge-2/3/1',) : down
+ Oper status ('ge-2/3/1',) : down
+ Description ('ge-2/3/1',) : PRUEBAS|PORTMIRROR|PC-Tecnico|eth0
+
+ Interface ge-2/3/6 : 
+ Admin status ('ge-2/3/6',) : up
+ Oper status ('ge-2/3/6',) : up
+ Description ('ge-2/3/6',) : RR|NA|3BBIRRR_ARCFOL01|ge-0/0/11
+
+ Interface ge-2/3/7 : 
+ Admin status ('ge-2/3/7',) : up
+ Oper status ('ge-2/3/7',) : up
+ Description ('ge-2/3/7',) : LAB-CISCO|DATOS|JUNIPER|NA
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : RR|NA|3BBIRRR_ARCFOL01|ae1
+
+ Interface ae50 : 
+ Admin status ('ae50',) : up
+ Oper status ('ae50',) : up
+ Description ('ae50',) : Claro Olleros|NA|TC2470-BR-01|BE50
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : P-PE interconnection
+**************************************************************************************************

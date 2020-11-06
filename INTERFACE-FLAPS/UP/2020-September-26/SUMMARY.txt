@@ -1,0 +1,23 @@
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 546, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1506
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 557, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1508
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 562, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.1525
+
+Sep 26 03:17:17  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 547, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/0.32767
+
+Sep 26 10:31:20  3BBIRP_USTXST01-re0 mib2d[6337]: SNMP_TRAP_LINK_UP: ifIndex 550, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1.32767
+
+Sep 26 06:40:57  3BBIRP_USGAAT01-re0 mib2d[6748]: SNMP_TRAP_LINK_UP: ifIndex 547, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1.32767
+
+Sep 26 18:19:55  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 574, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.0
+
+Sep 26 18:19:55  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 578, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.100
+
+Sep 26 18:32:26  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 574, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.0
+
+Sep 26 18:32:26  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 579, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.32767
+

@@ -1,0 +1,56 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRPE-CODCOR01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-2/0/0 : 
+ Admin status ('xe-2/0/0',) : up
+ Oper status ('xe-2/0/0',) : up
+ Description ('xe-2/0/0',) : Claro COOR|NA|A9KORTEZAL2|Te 0/0/0/19
+
+ Interface xe-2/1/0 : 
+ Admin status ('xe-2/1/0',) : up
+ Oper status ('xe-2/1/0',) : up
+ Description ('xe-2/1/0',) : TO-THBASUBA2|OTN|TenGigE0/3/0/21
+
+ Interface ge-2/2/0 : 
+ Admin status ('ge-2/2/0',) : up
+ Oper status ('ge-2/2/0',) : up
+ Description ('ge-2/2/0',) : CE|NA|3BBARCE_CODCOR01|Gi 1/12
+
+ Interface ge-2/2/1 : 
+ Admin status ('ge-2/2/1',) : up
+ Oper status ('ge-2/2/1',) : up
+ Description ('ge-2/2/1',) : CE|NA|3BBARCE_CODCOR02|Gi 1/12
+
+ Interface ge-2/2/3 : 
+ Admin status ('ge-2/2/3',) : up
+ Oper status ('ge-2/2/3',) : up
+ Description ('ge-2/2/3',) : PE to PE|IARCCOBOGORT-ECGGUCLL-GE1_-001|2BBALS_ECQICO01|TE3/2
+
+ Interface ge-2/2/6 : 
+ Admin status ('ge-2/2/6',) : up
+ Oper status ('ge-2/2/6',) : up
+ Description ('ge-2/2/6',) : RR|NA|3BBIRRR_CODCOR01|ge-0/0/10
+
+ Interface ge-2/3/6 : 
+ Admin status ('ge-2/3/6',) : up
+ Oper status ('ge-2/3/6',) : up
+ Description ('ge-2/3/6',) : RR|NA|3BBIRRR_CODCOR01|ge-0/0/11
+
+ Interface ae1 : 
+ Admin status ('ae1',) : up
+ Oper status ('ae1',) : up
+ Description ('ae1',) : RR|NA|3BBIRRR_CODCOR01|ae1
+
+ Interface ae50 : 
+ Admin status ('ae50',) : up
+ Oper status ('ae50',) : up
+ Description ('ae50',) : Claro COOR|NA|A9KORTEZAL2|BE 50
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : PE-P interconnection
+**************************************************************************************************

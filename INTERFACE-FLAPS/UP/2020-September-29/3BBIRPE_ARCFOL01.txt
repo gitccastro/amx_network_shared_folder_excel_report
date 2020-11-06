@@ -1,0 +1,7 @@
+
+Sep 29 13:22:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/1
+Sep 29 13:22:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 600, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/1.1700
+Sep 29 13:22:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 603, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/1.1701
+Sep 29 13:22:24  3BBIRPE_ARCFOL01-re0 mib2d[21201]: SNMP_TRAP_LINK_UP: ifIndex 602, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-2/0/1.32767
+
+{master}

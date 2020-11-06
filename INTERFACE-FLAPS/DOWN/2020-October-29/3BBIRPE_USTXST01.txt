@@ -1,0 +1,4 @@
+
+Oct 29 12:39:22  3BBIRPE_USTXST01-re0 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 600, ifAdminStatus up(1), ifOperStatus down(2), ifName et-3/0/5
+
+{master}

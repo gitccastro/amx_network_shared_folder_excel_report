@@ -1,7 +1,0 @@
-
-Jun 16 02:27:54  3BBIRPE_PELIPO01-re0 mib2d[6666]: SNMP_TRAP_LINK_DOWN: ifIndex 542, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/3
-
-Jun 16 02:37:53  3BBIRPE_PELIPO01-re0 mib2d[6666]: SNMP_TRAP_LINK_DOWN: ifIndex 542, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-2/2/3
-
-Jun 16 17:04:56  3BBIRPE_DOSD3M01-re1 mib2d[6344]: SNMP_TRAP_LINK_DOWN: ifIndex 537, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-2/0/0.0
-

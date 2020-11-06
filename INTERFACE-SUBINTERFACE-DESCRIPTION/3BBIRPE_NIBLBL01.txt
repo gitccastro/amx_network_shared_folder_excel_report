@@ -1,0 +1,9 @@
+3BBIRPE_NIBLBL01 
+3BBIRPE_NIBLBL01 set interfaces xe-2/0/1 description "OTN|NA|4LDIPOTPNIASBL01|Port 1/14"
+3BBIRPE_NIBLBL01 set interfaces ge-2/2/1 description "CE|3BBARCE_GTGUGV02|GE1/13"
+3BBIRPE_NIBLBL01 set interfaces ge-2/2/2 description "Claro BLUEFIELDS|NA|BLU-CSCASR9006-M1|Gi 0/3/0/13"
+3BBIRPE_NIBLBL01 set interfaces ge-2/3/8 description "BLU-CSCASR9006-M1|Gi0/3/0/0"
+3BBIRPE_NIBLBL01 set interfaces ge-2/3/8 unit 2053 description "PE to Local|dth-mcast|BLU-CSCASR9006-M1|Gi0/3/0/0"
+3BBIRPE_NIBLBL01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE_NIBLBL01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE_NIBLBL01 

@@ -1,0 +1,4 @@
+
+Oct 13 19:40:51  3BBIRP_USFLNA01-re0 mib2d[6192]: SNMP_TRAP_LINK_UP: ifIndex 570, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/5.0
+
+{master}

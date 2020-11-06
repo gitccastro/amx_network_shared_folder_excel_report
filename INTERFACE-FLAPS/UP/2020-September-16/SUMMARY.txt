@@ -1,0 +1,13 @@
+
+Sep 16 14:12:58  3BBIRPE_NIBLBL01-re0 mib2d[7374]: SNMP_TRAP_LINK_UP: ifIndex 556, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/8
+
+Sep 16 14:12:58  3BBIRPE_NIBLBL01-re0 mib2d[7374]: SNMP_TRAP_LINK_UP: ifIndex 562, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/8.2053
+
+Sep 16 14:12:58  3BBIRPE_NIBLBL01-re0 mib2d[7374]: SNMP_TRAP_LINK_UP: ifIndex 563, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/8.32767
+
+Sep 16 16:23:27  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 574, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/2/1.0
+
+Sep 16 16:23:27  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 572, ifAdminStatus up(1), ifOperStatus up(1), ifName ge-2/3/8.2052
+
+Sep 16 16:23:27  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_UP: ifIndex 580, ifAdminStatus up(1), ifOperStatus up(1), ifName lsi.256
+

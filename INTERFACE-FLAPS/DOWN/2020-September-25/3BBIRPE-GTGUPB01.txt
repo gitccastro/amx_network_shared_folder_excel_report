@@ -1,0 +1,5 @@
+
+Sep 25 15:06:55  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_DOWN: ifIndex 578, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/2/1.100
+Sep 25 15:06:55  3BBIRPE_GTGUPB01-re0 mib2d[7133]: SNMP_TRAP_LINK_DOWN: ifIndex 579, ifAdminStatus down(2), ifOperStatus down(2), ifName ge-2/2/1.32767
+
+{master}

@@ -1,0 +1,5 @@
+
+Sep 17 02:59:39  3BBIRP_NIBLBL01-re0 mib2d[6805]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1
+Sep 17 03:00:53  3BBIRP_NIBLBL01-re0 mib2d[6805]: SNMP_TRAP_LINK_UP: ifIndex 536, ifAdminStatus up(1), ifOperStatus up(1), ifName xe-0/0/1
+
+{master}

@@ -1,0 +1,5 @@
+
+Nov  4 12:42:13  3BBIRP_DOSD3M01-re1 mib2d[6340]: SNMP_TRAP_LINK_DOWN: ifIndex 549, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-0/0/0.1513
+Nov  4 12:58:15  3BBIRP_DOSD3M01-re1 mib2d[6340]: SNMP_TRAP_LINK_DOWN: ifIndex 550, ifAdminStatus down(2), ifOperStatus down(2), ifName xe-0/0/0.1529
+
+{master}

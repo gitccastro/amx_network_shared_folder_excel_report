@@ -1,0 +1,36 @@
+**************************************************************************************************
+**************************************************************************************************
+                                             3BBIRP_ARCFOL01                                                   
+**************************************************************************************************
+**************************************************************************************************
+
+ Interface xe-0/0/0 : 
+ Admin status ('xe-0/0/0',) : up
+ Oper status ('xe-0/0/0',) : up
+ Description ('xe-0/0/0',) : OTN|NA|4LDIPOTPARCFOL01|Port 1/4
+
+ Interface xe-0/0/1 : 
+ Admin status ('xe-0/0/1',) : down
+ Oper status ('xe-0/0/1',) : down
+ Description ('xe-0/0/1',) : OTN|NA|4LDIPOTPARCFOL01|Port 1/15
+
+ Interface xe-0/0/2 : 
+ Admin status ('xe-0/0/2',) : up
+ Oper status ('xe-0/0/2',) : up
+ Description ('xe-0/0/2',) : OTN|4LDIPOTPARCFOL01|PSM-2S-PS2-Slot1-Port 17|TO-3BBIRP_BRRJMA01-XE-0/0/2
+
+ Interface xe-0/0/3 : 
+ Admin status ('xe-0/0/3',) : up
+ Oper status ('xe-0/0/3',) : up
+ Description ('xe-0/0/3',) : OTN|Huawei|C2470OLLS52|Slot10-Port 1|TO-3BBIRP_CLRMSL01-XE-0/0/3
+
+ Interface xe-0/0/4 : 
+ Admin status ('xe-0/0/4',) : up
+ Oper status ('xe-0/0/4',) : down
+ Description ('xe-0/0/4',) : OTN|Huawei|C2470OLLS52|Slot10-Port 2|TO-3BBIRP_CODCOR01-XE-0/0/3
+
+ Interface af0 : 
+ Admin status ('af0',) : up
+ Oper status ('af0',) : up
+ Description ('af0',) : P-PE interconnection
+**************************************************************************************************

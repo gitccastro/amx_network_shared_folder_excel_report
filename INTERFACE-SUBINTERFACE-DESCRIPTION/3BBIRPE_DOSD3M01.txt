@@ -1,0 +1,10 @@
+3BBIRPE_DOSD3M01 
+3BBIRPE_DOSD3M01 set interfaces xe-2/0/0 description "Claro DO3M|NA|30MZ_ASBR|TE 0/1/0/1"
+3BBIRPE_DOSD3M01 set interfaces ge-2/2/0 description "CE|NA|3BBARCE_DOSD3M01|Gi 1/12"
+3BBIRPE_DOSD3M01 set interfaces ge-2/2/1 description "CE|NA|3BBARCE_DOSD3M02|Gi 1/12"
+3BBIRPE_DOSD3M01 set interfaces ge-2/2/3 description "OTN|NA|4LDIPOTPDODN3M01|Port 1/8"
+3BBIRPE_DOSD3M01 set interfaces ge-2/2/3 unit 1600 description "CE|NA|3BBARCE_ARCFGA01|Gi 1/12.1600"
+3BBIRPE_DOSD3M01 set interfaces af0 description "PE-P interconnection"
+3BBIRPE_DOSD3M01 set interfaces af0 unit 0 description "PE-P Fabric Interface"
+3BBIRPE_DOSD3M01 
+3BBIRPE_DOSD3M01 {master}
